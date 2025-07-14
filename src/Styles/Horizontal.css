@@ -1,0 +1,54 @@
+/* Horizontal Scroller CSS */
+
+.racesWrapper {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.races {
+  display: flex;
+  width: max-content;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 2vw;
+}
+
+.races h2 {
+  font-family: 'Staatliches', cursive;
+  font-size: 23vw;
+  flex-shrink: 0;
+  padding: 0 0.3em;
+  color: #000000;
+  white-space: nowrap;
+  font-family: Azonix;
+  line-height: 1;
+}
+
+/* ✅ Responsive font size for smaller screens */
+@media (max-width: 768px) {
+  .races h2 {
+    font-size: 35vw;
+  }
+}
+
+/* Optional padding fix for very small screens */
+@media (max-width: 480px) {
+  
+  .racesWrapper{
+    background-color:rgb(223, 170, 170);
+  }
+    .races {
+    padding: 0 4vw;
+    
+  }
+  .races h2 {
+    font-size: 35vw;
+    font-weight: 900;
+    
+  }
+
+}

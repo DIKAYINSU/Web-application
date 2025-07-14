@@ -1,0 +1,44 @@
+.cursur {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(21, 143, 243, 0.9);
+  border-radius: 50%;
+  position: fixed;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 1.3vw;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+
+
+
+.swiper-box {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-box .mySwiperOne {
+  width: 40vw;
+  height: 60vh;
+}
+
+.swiper-box .mySwiperOne .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+}
+.animation-container{
+      z-index: 20;
+      }
+
+

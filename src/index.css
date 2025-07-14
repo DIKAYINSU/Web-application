@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Flowbite CSS import करें */
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+/* Custom theme configurations */
+
+  html,body{
+      overflow-x: hidden;
+  }
+.particles-container canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: black;
+}
