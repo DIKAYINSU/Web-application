@@ -5,6 +5,8 @@ function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const navbarRef = useRef(null); // ✅ Reference for navbar
 
+  const [isOverParticle, setIsOverParticle] = useState(true);
+
   useEffect(() => {
     let prevScrollPos = window.scrollY;
 
@@ -29,6 +31,25 @@ function Navbar() {
     };
   }, []);
 
+  // color change particle container
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // console.log('Intersecting:', entry.isIntersecting);
+        setIsOverParticle(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    const section = document.querySelector('#particle-section');
+    if (section) observer.observe(section);
+
+    return () => {
+      if (section) observer.unobserve(section);
+    };
+  }, []);
+
   return (
     // <nav
     //   ref={navbarRef}
@@ -38,13 +59,14 @@ function Navbar() {
     //     <h2 className="text-lg font-bold">Navbar</h2>
     //   </div>
     // </nav>
-     <nav    
-        ref={navbarRef}
-     className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur border-b@ border-gray-200@ transition-all duration-500 dark:bg-gray-900 dark:border-gray-700">
+    <nav
+      ref={navbarRef}
+      className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur border-b@ border-gray-200@ transition-all duration-500 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="./src/assets/Weblogo.png" className="h-12" alt="Logo" />
+          {/* <img src="./src/assets/Weblogo.png" className="h-12" alt="Logo" /> */}
+         <img src={isOverParticle ? './src/assets/WeblogoWhite.png' : './src/assets/Weblogo.png'} className="h-12" alt="Logo" />
         </a>
 
         {/* Mobile Toggle */}
@@ -71,28 +93,29 @@ function Navbar() {
 
         {/* Nav Items */}
         <div
-          className={`${
-            mobileMenuOpen ? '' : 'hidden'
-          } w-full md:block md:w-auto`}
+          className={`${mobileMenuOpen ? '' : 'hidden'
+            } w-full md:block md:w-auto`}
         >
-          <ul className="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4  rounded-lg  md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white/10 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4  rounded-lg  md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a
                 href="#"
-                className="group relative block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#ff006e] md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
+                  } transition-colors duration-300`}
               >
                 Home
-                <span className="block w-0 group-hover:w-full h-0.5 bg-[#ff006e] transition-all duration-300"></span>
+                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 text-blue-700 transition-all duration-300"></span>
               </a>
             </li>
 
             <li>
               <a
-                href="./About.html"
-                className="group relative block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                href="#"
+                className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
+                  } transition-colors duration-300`}
               >
                 About Us
-                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 text-blue-700 transition-all duration-300"></span>
               </a>
             </li>
 
@@ -100,7 +123,7 @@ function Navbar() {
             <li className="relative">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500"
+                className={`flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover: ${isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'} md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500`}
               >
                 Products
                 <svg
@@ -162,20 +185,22 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="group relative block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
+                  } transition-colors duration-300`}
               >
                 Gallery
-                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 text-blue-700 transition-all duration-300"></span>
               </a>
             </li>
 
             <li>
               <a
                 href="#"
-                className="group relative block py-2 px-3  text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
+                className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
+                  } transition-colors duration-300`}
               >
                 Contact Us
-                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 text-blue-700 transition-all duration-300"></span>
               </a>
             </li>
           </ul>

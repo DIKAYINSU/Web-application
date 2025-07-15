@@ -21,7 +21,9 @@ function App() {
     <>
     
       <Navbar />
-      <Particles/>
+  <div id="particle-section" className="h-screen w-full">
+  <Particles />
+</div>
       <Hero />
       <HorizontalScroll />
       <WhatWeDO />
