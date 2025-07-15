@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
-/* Flowbite CSS import करें */
+/* @font-face {
+  font-family: Barlow;
+  src: url('./Styles/fonts/Barlow-BoldItalic.ttf');
+}
+
+@theme{
+  --font-Barlow:Barlow,"sans-serif";
+} */
+/* Flowbite CSS  */
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";

@@ -26,11 +26,12 @@ function App() {
 </div>
       <Hero />
       <HorizontalScroll />
+      <AboutUs/>
       <WhatWeDO />
       <Categories />
       {/* <CardSwiper /> */}
       <OurProducts />
-      <WhatWeDO />
+      {/* <WhatWeDO /> */}
       <Certification />
       <Footer/>
     

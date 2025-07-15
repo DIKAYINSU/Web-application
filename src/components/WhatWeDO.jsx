@@ -8,7 +8,7 @@ function WhatWeDO() {
     <div className="about-container ">
 
       <div className="about-text fade-up ">
-        <span className="a-main-heading">What We Do</span>
+        <span className="a-main-heading ">What We Do</span>
 
         <p className=" text-lg mb-8">
           <br />
