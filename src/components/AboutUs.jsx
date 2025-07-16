@@ -13,10 +13,9 @@ function AboutUs() {
         {/* <!-- <span className="headingfont">About us</span> --> */}
         
         <p className="headingfont">About Us</p>
-        <h2>Shaping Tomorrow’s Industries with Advanced FRP Solutions</h2>
-        <p><span className="a-bold">Di Kay Insulation Industries Pvt. Ltd.</span> is a trusted manufacturer of <span
-            className="">FRP composites and insulation solutions,</span>
-          certified with ISO 9001:2015 and Indian Railways HL3 standards.<br />With Many Decades of experience, we
+        <h2 className='heading-one' >Shaping Tomorrow’s Industries with Advanced FRP Solutions</h2>
+        <p className='about-para'><span className="a-bold">Di Kay Insulation Industries Pvt. Ltd.</span> is a trusted manufacturer of <span>FRP composites and insulation solutions,</span>
+          certified with ISO 9001:2015 and Indian Railways HL3 standards.<br /><br />With Many Decades of experience, we
           specialize in precision-engineered components used in electrical
           Machinery, Wind turbines, Hydro Generators, and Industrial Infrastructure. Our products are designed to
           perform in demanding environments—ensuring long-term efficiency, safety, and reliability across critical
