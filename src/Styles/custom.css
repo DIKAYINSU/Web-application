@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 .swiper-container {
   height: 100vh;
   /* width: 100vw; */
@@ -35,7 +37,7 @@
 
 
 
-/* about Page Css */
+/* About Page CSS Start From Here */
 
 .about-section {
   padding: 3.75rem 1.25rem;
@@ -52,21 +54,14 @@
   position: relative;
 }
 
-/* curson Animation */
-/* .cursonAni{
-  height:15vh;
-  width: 15vh;
-  background-color: red;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-} */
 
 .about-text {
   flex: 1 1 500px;
   font-family: 'Roboto';
+}
+
+.about-text .about-sub-heading {
+  padding-bottom: 6px;
 }
 
 .about-text .subtitle {
@@ -88,13 +83,11 @@
   line-height: 6.5vh;
 }
 
-.headingfont {
-  font-size: 6vh;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-bottom: 6vh;
-  padding-left: 1vh;
-  /* text-align: center; */
+
+.about-text .headingfont {
+
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 .about-text p {
@@ -121,12 +114,6 @@
   margin: 15px 0 0;
 }
 
-/* .features li {
-  background: #f0f0f0;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.95rem;
-} */
 
 .about-image {
   flex: 1 1 500px;
@@ -154,7 +141,14 @@
   transform: scale(1.03);
 }
 
+.tab {
+  padding-bottom: .5rem;
+}
+
 /* media query for About us section */
+.text {
+  font-weight: bold;
+}
 
 
 @media (max-width: 768px) {
@@ -164,18 +158,56 @@
     text-align: left;
   }
 
+  /* .about-container .headingfont {
+    text-align: left;
+    font-size: 2.1rem;
+    font-weight: 900;
+  } */
+
+  .about-text .about-para {
+    font-weight: 410;
+
+  }
+
   .features {
     justify-content: start;
-    padding-left:2.5rem;
+    /* padding-left:2.5rem; */
   }
-   .know-more{
+
+  .know-more {
     margin-left: 5.5rem;
-   }
-   .key-heading{
+  }
+
+  .key-heading {
     font-size: 1.25rem;
-   }
-  
+  }
+
+  .custom-list-item .text {
+    font-weight: 450;
+  }
+
+  .a-bold {
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+
+  .about-text .heading-one {
+    line-height: 2.1rem;
+    padding-bottom: 1.3rem;
+  }
+
+  .about-image img {
+    background-size: cover;
+  }
+
+  .custom-list-item .text {
+    font-weight: 800;
+  }
+
+
 }
+
+/* About Page CSS End From Here */
 
 
 /* list item css
@@ -198,7 +230,7 @@
   height: 25px;
   border-radius: 50%;
   /* for rounded-circle */
-  background-color: #215C5C;
+  background-color: rgb(37, 165, 240);
   /* optional, you can set any bg */
   color: #ffffff;
   font-size: 16px;
@@ -218,34 +250,98 @@
   color: black;
 }
 
-.a-main-heading {
-  font-size: 4vh;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-bottom: 6vh;
-  /* padding-left: 1vh; */
+/* What We Do Section CSS Started Here */
+
+.whatwedo-h  {
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
+.whatwedo-para{
+  font-weight: 500;
+}
+
+.about-text .whatwedo-h2 {
+  color: #0bd9fd; 
+}
+
+/* What We Do Section CSS Started Here */
 .mycolor {
   fill: white;
 }
 
+/* Product Categories Start From  CSS */
+
 .a-heading {
-  font-size: 5vh;
+  font-size: 2.1rem;
   font-weight: 700;
   text-align: center;
-  padding-top: 4.5vh;
-  padding-bottom: 6vh;
+  /* padding-bottom: 2rem; */
 }
 
 .a-subheading {
   text-align: center;
-  padding: 0vh 15vh 6vh 15vh;
-  font-weight: 400;
+  font-weight: 600;
+  padding: 2rem 7rem 3rem 7rem;
 }
+
+
+
+
+
+
+
+/* product categories Media query */
+
+@media (max-width:576px) {
+
+  .a-heading {
+    margin-top: 2rem;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .a-subheading {
+    text-align: left;
+    padding: 2rem 2.5rem;
+  }
+}
+
+/* Product Categories CSS */
 
 #second-slider {
   height: 100vh;
   width: 100%;
   background-color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* curson Animation */
+/* .cursonAni{
+  height:15vh;
+  width: 15vh;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+} */
