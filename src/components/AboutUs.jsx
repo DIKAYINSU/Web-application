@@ -10,22 +10,20 @@ function AboutUs() {
 
       </div>
       <div className="about-text fade-up">
-        {/* <!-- <span className="headingfont">About us</span> --> */}
-        
-       {/* <span className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">About Us </span> */}
         <span className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">About Us</span>
 
-        <div className="text-base font-medium text-gray-700 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
-        <h2 className='about-sub-heading'>Shaping Tomorrow’s Industries with Advanced FRP Solutions</h2>
-        <p><span className="a-bold">Di Kay Insulation Industries Pvt. Ltd.</span> is a trusted manufacturer of <span
-            className="">FRP composites and insulation solutions,</span>
+        <div className="text-base  font-medium text-gray-900 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
+        <h2 className='text-2xl pt-4 pb-4'>Shaping Tomorrow’s Industries with Advanced FRP Solutions</h2>
+
+        <p className='text-lg line-none font-Doto'><span className="a-bold">Di Kay Insulation Industries Pvt. Ltd.</span> is a trusted manufacturer of <span
+            >FRP composites and insulation solutions,</span>
           certified with ISO 9001:2015 and Indian Railways HL3 standards </p></div>
           
           <div className='tab'/>
 
-           <div className="text-base font-medium text-gray-700 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
-          <p>
-             With Many Decades of experience, we
+           <div className="text-base font-medium text-gray-900 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
+          <p className='text-lg'>
+          With Many Decades of experience, we
           specialize in precision-engineered components used in electrical
           Machinery, Wind turbines, Hydro Generators, and Industrial Infrastructure. Our products are designed to
           perform in demanding environments—ensuring long-term efficiency, safety, and reliability across critical
@@ -33,8 +31,8 @@ function AboutUs() {
           </p>
          </div>
 
-   <div className="text-base font-medium text-gray-700 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
-        <h4 className='key-heading'>Key Values and Vision</h4>
+   <div className="text-base font-medium text-gray-900 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
+        <h4 className='text-[20px] pt-4'>Key Values and Vision</h4>
         <ul className="features">
           <li className="custom-list-item">
             <span className="icon">

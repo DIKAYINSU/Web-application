@@ -1,13 +1,22 @@
 @import "tailwindcss";
 
-/* @font-face {
+@font-face {
   font-family: Barlow;
   src: url('./Styles/fonts/Barlow-BoldItalic.ttf');
 }
 
+:root {
+  --font-Doto: 'Doto', sans-serif;
+}
+.font-Doto {
+  font-family: var(--font-Doto);
+}
+
 @theme{
   --font-Barlow:Barlow,"sans-serif";
-} */
+
+ 
+}
 /* Flowbite CSS  */
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
@@ -24,3 +33,4 @@
   height: 100% !important;
   background-color: black;
 }
+
