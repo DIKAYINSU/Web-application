@@ -1,5 +1,7 @@
 import { useState } from 'react'
-
+import { useEffect } from 'react';
+import Lenis from 'lenis'
+import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import HorizontalScroll from './components/HorizontalScroll'
@@ -17,24 +19,59 @@ import Particles from './components/Particles'
 function App() {
   const [count, setCount] = useState(0)
 
+  useEffect(() => {
+
+    const lenis = new Lenis({
+      duration: 1.5, // smoothness
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+    });
+
+    // Secord Smooth Scrolling
+
+    // const lenis = new Lenis({
+    //   duration: 1.5, // Smooth but not too slow
+    //   easing: t => 1 - Math.pow(1 - t, 3), // Better than default for smooth scroll
+    //   direction: 'vertical',
+    //   gestureDirection: 'vertical',
+    //   smooth: true,
+    //   smoothTouch: true,  // Enable smoothing on mobile/touch devices too
+    //   touchMultiplier: 1.5, // Make touch scroll slower and smoother
+    //   infinite: false
+    // });
+
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    lenis.on('scroll', (e) => {
+      console.log('Scrolling', e);
+    });
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <>
-    
       <Navbar />
-  <div id="particle-section" className="h-screen w-full">
-  <Particles />
-</div>
+      <div id="particle-section" className="h-screen w-full">
+        <Particles />
+      </div>
       <Hero />
       <HorizontalScroll />
-      <AboutUs/>
+      <AboutUs />
       <WhatWeDO />
       <Categories />
       {/* <CardSwiper /> */}
       <OurProducts />
-      {/* <WhatWeDO /> */}
       <Certification />
-      <Footer/>
-    
+      <Footer />
+      <Outlet />
 
     </>
   )

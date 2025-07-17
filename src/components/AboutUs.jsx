@@ -13,7 +13,7 @@ function AboutUs() {
         <span className="text-4xl font-Roboto font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">About Us</span>
 
         <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
-        <h2 className='font-Roboto text-xl pt-3 font-bold'>Shaping Tomorrow’s Industries with Advanced FRP Solutions</h2>
+        <h2 className='font-Roboto text-xl pt-6 font-bold'>Shaping Tomorrow’s Industries with Advanced FRP Solutions</h2>
         <p className='font-Roboto text-lg pt-3'><span className="a-bold">Di Kay Insulation Industries Pvt. Ltd.</span> is a trusted manufacturer of <span
             className="">FRP composites and insulation solutions,</span>
           certified with ISO 9001:2015 and Indian Railways HL3 standards </p></div>

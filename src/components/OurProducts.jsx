@@ -28,18 +28,26 @@ function OurProducts() {
     scale: 0,
     pointerEvents: 'none',
     position: 'fixed',
-    zIndex: 9999,
+    zIndex: 0,
   });
 
   const moveX = gsap.quickTo(cursor, "left", { duration: 0.5, ease: "power3.out" });
   const moveY = gsap.quickTo(cursor, "top", { duration: 0.5, ease: "power3.out" });
 
   const enter = () => {
-    gsap.to(cursor, { opacity: 1, scale: 1, duration: 0.3, ease: 'power2.inOut' });
+    gsap.to(cursor, {
+       opacity: 1,
+        scale: 1,
+        duration: 0.6,
+        ease: 'power3.inOut' });  
   };
 
   const leave = () => {
-    gsap.to(cursor, { opacity: 0, scale: 0, duration: 0.3, easein: 'power2.inOut' });
+    gsap.to(cursor, { 
+      opacity: 0,
+       scale: 0, 
+       duration: 0.6,
+      ease: 'power3.inOut' });
   };
 
   const move = (e) => {
@@ -63,11 +71,11 @@ function OurProducts() {
   return (
     
     <>
-    <div className="grid sm:grid-cols-2 bg-gray-50">
-       <div ref={cursorRef} className="cursur">
+    <div className="grid sm:grid-cols-2 bg-gray-50 z-10">
+       <div ref={cursorRef} className="cursur z-5">
     </div> 
     
-    <div ref={containerRef} className="animation-container relative "> 
+    <div ref={containerRef} className="relative "> 
 
  
      <div className='pt-15 m-5'>

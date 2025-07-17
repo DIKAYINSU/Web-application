@@ -314,8 +314,8 @@
      opacity: 0;
      scale: 0;
      font-size: 1.3vw;
-     z-index: 0;
-      /* pointer-events: none; So that it doesn't block hover */
+     pointer-events: none;
       transform: translate(-50%,-50%);
+      
    
 } 
