@@ -7,14 +7,16 @@
 
 :root {
   --font-Doto: 'Doto', sans-serif;
+  --font-Roboto: 'Roboto', sans-serif;
 }
 .font-Doto {
   font-family: var(--font-Doto);
+ 
+}
+.font-Roboto{
+   font-family: var(--font-Roboto);
 }
 
-@theme{
-  --font-Barlow:Barlow,"sans-serif";
-} */
 /* Flowbite CSS  */
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";

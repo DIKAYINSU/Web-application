@@ -20,42 +20,31 @@ function OurProducts() {
   const container = containerRef.current;
   const cursor = cursorRef.current;
 
-  // Initial setup
+  // Optional: initial setup
   gsap.set(cursor, {
-    opacity: 0,
-    scale: 0,
     xPercent: -50,
     yPercent: -50,
+    opacity: 0,
+    scale: 0,
     pointerEvents: 'none',
-    zIndex: 9999,
     position: 'fixed',
+    zIndex: 9999,
   });
 
+  const moveX = gsap.quickTo(cursor, "left", { duration: 0.5, ease: "power3.out" });
+  const moveY = gsap.quickTo(cursor, "top", { duration: 0.5, ease: "power3.out" });
+
   const enter = () => {
-    gsap.to(cursor, {
-      opacity: 1,
-      scale: 1,
-      duration: 0.2,
-      ease: 'power2.out',
-    });
+    gsap.to(cursor, { opacity: 1, scale: 1, duration: 0.3, ease: 'power2.inOut' });
   };
 
   const leave = () => {
-    gsap.to(cursor, {
-      opacity: 0,
-      scale: 0,
-      duration: 0.2,
-      ease: 'power2.out',
-    });
+    gsap.to(cursor, { opacity: 0, scale: 0, duration: 0.3, easein: 'power2.inOut' });
   };
 
   const move = (e) => {
-    gsap.to(cursor, {
-      left: e.clientX,
-      top: e.clientY,
-      duration: 0.1,
-      ease: 'power2.out',
-    });
+    moveX(e.clientX);
+    moveY(e.clientY);
   };
 
   container.addEventListener('mouseenter', enter);
@@ -70,12 +59,12 @@ function OurProducts() {
 }, []);
 
 
+
   return (
     
     <>
     <div className="grid sm:grid-cols-2 bg-gray-50">
        <div ref={cursorRef} className="cursur">
-      hello
     </div> 
     
     <div ref={containerRef} className="animation-container relative "> 
