@@ -41,4 +41,12 @@
       z-index: 20;
       }
 
+  @media(max-width:576px) {
+    .swiper-box .mySwiperOne {
+      padding-top: 5rem;  
+      padding-bottom: 6rem;  
+       width: 80vw;
+       height: auto;
+}
+  }
 

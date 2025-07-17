@@ -14,9 +14,7 @@
 
 @theme{
   --font-Barlow:Barlow,"sans-serif";
-
- 
-}
+} */
 /* Flowbite CSS  */
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";

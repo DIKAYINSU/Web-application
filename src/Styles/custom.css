@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 .swiper-container {
   height: 100vh;
@@ -57,7 +57,7 @@
 
 .about-text {
   flex: 1 1 500px;
-  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
 }
 
 /* .about-text .about-sub-heading {
@@ -302,39 +302,23 @@
 
 /* Product Categories CSS */
 
-#second-slider {
+/* #second-slider {
   height: 100vh;
   width: 100%;
   background-color: red;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* curson Animation */
-/* .cursonAni{
-  height:15vh;
-  width: 15vh;
-  background-color: red;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
 } */
+
+   .cursur {
+     padding: 60px 60px;
+    background-color: rgb(21, 143, 243,.9);
+    border-radius: 50%;
+    position: fixed;
+    font-family: 2vw;
+     opacity: 0;
+     scale: 0;
+     font-size: 1.3vw;
+     z-index: 0;
+      /* pointer-events: none; So that it doesn't block hover */
+      transform: translate(-50%,-50%);
+   
+} 

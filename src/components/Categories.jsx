@@ -4,7 +4,7 @@ function Categories() {
   return (
     <>
     
-  <div className="min-h-screen bg-gray-50 py-6 sm:py-12">
+  <div className="min-h-screen bg-gray-200 py-6 sm:py-12">
     <h1 className="a-heading">Product Categories We Specialize In</h1>
 
     <h3 className="a-subheading">We specialize in the manufacturing of high-quality FRP components through three core
