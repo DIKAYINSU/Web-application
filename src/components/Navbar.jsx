@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -64,10 +65,11 @@ function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur border-b@ border-gray-200@ transition-all duration-500 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <NavLink to="/">
           {/* <img src="./src/assets/Weblogo.png" className="h-12" alt="Logo" /> */}
          <img src={isOverParticle ? './src/assets/WeblogoWhite.png' : './src/assets/Weblogo.png'} className="h-12" alt="Logo" />
-        </a>
+        
+        </NavLink>
 
         {/* Mobile Toggle */}
         <button
@@ -109,14 +111,14 @@ function Navbar() {
             </li>
 
             <li>
-              <a
-                href="#"
+              <NavLink
+                to="/About"
                 className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
                   } transition-colors duration-300`}
               >
                 About Us
                 <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 text-blue-700 transition-all duration-300"></span>
-              </a>
+              </NavLink>
             </li>
 
             {/* Dropdown */}

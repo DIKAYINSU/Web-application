@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import { useEffect } from 'react';
 import Lenis from 'lenis'
 import { Outlet } from 'react-router-dom'
@@ -13,11 +14,36 @@ import OurProducts from './components/OurProducts'
 import Certification from './components/Certification'
 import Footer from './components/Footer'
 import Particles from './components/Particles'
+import { Path } from 'ogl';
+import Home from '../src/Pages/Home'
+import About from '../src/Pages/About'
+import Contact from '../src/Pages/Contact'
+
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
+
+  // React Router Dom Code Start Here
+   
+  const router = createBrowserRouter([
+    {
+      path:"/",
+      element:<Home/>
+
+    },
+    { 
+     path:"/About",
+     element:<About/>
+    },
+    {
+     path:"/Contact",
+     element:<Contact/>
+    },
+    
+  ]);
+  // React Router Dom Code End  Here
 
   useEffect(() => {
 
@@ -58,6 +84,10 @@ function App() {
 
   return (
     <>
+      
+      <RouterProvider router={router}/>
+      
+{/* 
       <Navbar />
       <div id="particle-section" className="h-screen w-full">
         <Particles />
@@ -67,11 +97,10 @@ function App() {
       <AboutUs />
       <WhatWeDO />
       <Categories />
-      {/* <CardSwiper /> */}
       <OurProducts />
       <Certification />
       <Footer />
-      <Outlet />
+      <Outlet /> */}
 
     </>
   )
