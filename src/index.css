@@ -1,6 +1,23 @@
 @import "tailwindcss";
 
-/* Flowbite CSS import करें */
+@font-face {
+  font-family: Barlow;
+  src: url('./Styles/fonts/Barlow-BoldItalic.ttf');
+}
+
+:root {
+  --font-Doto: 'Doto', sans-serif;
+  --font-Roboto: 'Roboto', sans-serif;
+}
+.font-Doto {
+  font-family: var(--font-Doto);
+ 
+}
+.font-Roboto{
+   font-family: var(--font-Roboto);
+}
+  
+/* Flowbite CSS  */
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
@@ -16,3 +33,4 @@
   height: 100% !important;
   background-color: black;
 }
+

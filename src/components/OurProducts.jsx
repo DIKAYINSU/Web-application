@@ -1,5 +1,6 @@
 // CardSwiper.jsx
 import React, { useEffect, useRef } from 'react';
+import gsap from "gsap";
 import {useGSAP} from '@gsap/react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';
@@ -19,42 +20,39 @@ function OurProducts() {
   const container = containerRef.current;
   const cursor = cursorRef.current;
 
-  // // Initial setup
-  // gsap.set(cursor, {
-  //   opacity: 0,
-  //   scale: 0,
-  //   xPercent: -50,
-  //   yPercent: -50,
-  //   pointerEvents: 'none',
-  //   zIndex: 9999,
-  //   position: 'fixed',
-  // });
+  // Optional: initial setup
+  gsap.set(cursor, {
+    xPercent: -50,
+    yPercent: -50,
+    opacity: 0,
+    scale: 0,
+    pointerEvents: 'none',
+    position: 'fixed',
+    zIndex: 0,
+  });
+
+  const moveX = gsap.quickTo(cursor, "left", { duration: 0.5, ease: "power3.out" });
+  const moveY = gsap.quickTo(cursor, "top", { duration: 0.5, ease: "power3.out" });
 
   const enter = () => {
     gsap.to(cursor, {
-      opacity: 1,
-      scale: 1,
-      duration: 0.2,
-      ease: 'power2.out',
-    });
+       opacity: 1,
+        scale: 1,
+        duration: 0.6,
+        ease: 'power3.inOut' });  
   };
 
   const leave = () => {
-    gsap.to(cursor, {
+    gsap.to(cursor, { 
       opacity: 0,
-      scale: 0,
-      duration: 0.2,
-      ease: 'power2.out',
-    });
+       scale: 0, 
+       duration: 0.6,
+      ease: 'power3.inOut' });
   };
 
   const move = (e) => {
-    gsap.to(cursor, {
-      left: e.clientX,
-      top: e.clientY,
-      duration: 0.1,
-      ease: 'power2.out',
-    });
+    moveX(e.clientX);
+    moveY(e.clientY);
   };
 
   container.addEventListener('mouseenter', enter);
@@ -69,28 +67,31 @@ function OurProducts() {
 }, []);
 
 
+
   return (
     
     <>
-    <div className="grid sm:grid-cols-2 bg-gray-50">
+    <div className="grid sm:grid-cols-2 bg-gray-50 z-10">
+       <div ref={cursorRef} className="cursur z-5">
+    </div> 
     
-    <div ref={containerRef} className="animation-container relative pt-20 pl-5XX"> 
+    <div ref={containerRef} className="relative "> 
 
-<div ref={cursorRef} className="cursur">
-      hello
-    </div>  
-      <h1 className="text-4xl font-bold align text-center pt-8">Our Products</h1>
-      <h3 className="text-center pt-6 text-l text-wrap">Reliable FRP Product Manufacturers for Electrical,
+ 
+     <div className='pt-15 m-5'>
+      <h1 className="text-4xl font-bold align text-center pt-5">Our Products</h1>
+      <h3 className="text-lg text-left font-bold pl-10 pt-8 font-Roboto">Reliable FRP Product Manufacturers for Electrical,
         Railways,Renewable Energy and More</h3>
-      <p className=" pt-10 text-left text-xl p-4 ">At Di Kay Insulation Industries Pvt. Ltd., we specialize in manufacturing
+      <p className="font-Roboto text-lg text-left pl-10 pt-5 font-medium ">At Di Kay Insulation Industries Pvt. Ltd., we specialize in manufacturing
         high-quality, custom-designed FRP (Fibre Reinforced Plastic) products that cater to a wide range of industries
         including Electrical, Railways, Renewable Energy, and Defence. Our product range includes FRP sheets, motor
         covers, insulation blocks, air guide shields, epoxy cylinders, glass epoxy tubes, and more — all tailored to
         meet exact client specifications. With in-house R&D and testing capabilities, we ensure precision, durability,
         and performance in every product we deliver</p>
+        </div>
     </div>
     <div>
-      <div className="swiper-box pt-10">
+      <div className="swiper-box ">
             <Swiper
               effect="cards"
               grabCursor={true}

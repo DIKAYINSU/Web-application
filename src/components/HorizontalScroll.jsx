@@ -22,8 +22,9 @@ function HorizontalScroll() {
       scrollTrigger: {
         trigger: ".racesWrapper",
         start: "top top",
-        end: () => `+=${totalScroll}`,
-        scrub: 1.1,
+        end: () => `+=${totalScroll}`,  
+        // scrub: 1.1,
+        scrub:1.1,
         pin: true,
         anticipatePin: 1,
         markers: false,
@@ -42,13 +43,13 @@ function HorizontalScroll() {
       {/* <div className="bg lightBG"></div> */}
 
       <div className="racesWrapper">
-        <div ref={racesRef} className="races">
-          <h2>Driven</h2>
-          <h2>By</h2>
-          <h2>Innovation,</h2>
-          <h2>Committed</h2>
-          <h2>to</h2>
-          <h2>Quality</h2>
+        <div ref={racesRef} className="races font-Barlow@">
+          <h2>DRIVEN</h2>
+          <h2>BY</h2>
+          <h2>INNOVATION,</h2>
+          <h2>COMMITTED</h2>
+          <h2>TO</h2>
+          <h2 className="color">QUALITY</h2>
         </div>
       </div>
 
