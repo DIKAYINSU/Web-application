@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useEffect } from 'react';
 import Lenis from 'lenis'
-import { Outlet } from 'react-router-dom'
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import HorizontalScroll from './components/HorizontalScroll'
@@ -13,11 +13,31 @@ import OurProducts from './components/OurProducts'
 import Certification from './components/Certification'
 import Footer from './components/Footer'
 import Particles from './components/Particles'
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Applayout from './layout/Applayout';
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Applayout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />
+        },
+        {
+          path: "/About",
+          element: <About />
+        }
+      ]
+    },
+
+  ])
 
   useEffect(() => {
 
@@ -56,25 +76,27 @@ function App() {
     };
   }, []);
 
-  return (
-    <>
-      <Navbar />
-      <div id="particle-section" className="h-screen w-full">
-        <Particles />
-      </div>
-      <Hero />
-      <HorizontalScroll />
-      <AboutUs />
-      <WhatWeDO />
-      <Categories />
-      {/* <CardSwiper /> */}
-      <OurProducts />
-      <Certification />
-      <Footer />
-      <Outlet />
+  return <RouterProvider router={router} />
 
-    </>
-  )
+  // return (
+  //   <>
+  //     <Navbar />
+  //     <div id="particle-section" className="h-screen w-full">
+  //       <Particles />
+  //     </div>
+  //     <Hero />
+  //     <HorizontalScroll />
+  //     <AboutUs />
+  //     <WhatWeDO />
+  //     <Categories />
+  //     <OurProducts />
+  //     <Certification />
+  //     <Footer />
+  //     <Outlet />
+
+  //   </>
+  // )
+
 }
 
 export default App
