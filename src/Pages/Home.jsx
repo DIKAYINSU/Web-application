@@ -6,6 +6,7 @@ import WhatWeDO from '../components/WhatWeDO'
 import AboutUs from '../components/AboutUs'
 import Categories from '../components/Categories'
 import Certification from '../components/Certification'
+import OurProducts from '../components/OurProducts'
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <AboutUs/>
       <WhatWeDO/>
       <Categories/>
+      <OurProducts/>
       <Certification/>
 
 

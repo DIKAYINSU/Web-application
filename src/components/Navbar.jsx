@@ -55,7 +55,7 @@ function Navbar() {
   return (
     <nav
       ref={navbarRef}
-      className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur border-b  transition-all duration-500 dark:bg-gray-900 dark:border-gray-700"
+      className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur border-b@   transition-all duration-500 dark:bg-gray-900 dark:border-gray-700"
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
