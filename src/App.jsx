@@ -16,6 +16,12 @@ import Particles from './components/Particles'
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Applayout from './layout/Applayout';
+import Contact from './Pages/Contact';
+import Gallery from './Pages/Gallery';
+import Machined from './Pages/Machined';
+import Molded from './Pages/Molded';
+import Railways from './Pages/Railways';
+import Defence from './Pages/Defence';
 
 
 
@@ -33,7 +39,35 @@ function App() {
         {
           path: "/About",
           element: <About />
-        }
+        },
+         {
+          path:"/Gallery",
+          element:<Gallery/>
+        },
+          {
+          path: "/Contact",
+          element: <Contact/>
+        },
+        {
+          path: "/Machined",
+          element: <Machined/>
+        },
+       
+        {
+          path: "/Molded",
+          element: <Molded/>
+        },
+       {
+          path: "/Railways",
+          element: <Railways/>
+        },
+       {
+          path: "/Defence",
+          element: <Defence/>
+        },
+       
+       
+         
       ]
     },
 
@@ -84,7 +118,7 @@ function App() {
   //     <div id="particle-section" className="h-screen w-full">
   //       <Particles />
   //     </div>
-  //     <Hero />
+  //      <Hero />
   //     <HorizontalScroll />
   //     <AboutUs />
   //     <WhatWeDO />

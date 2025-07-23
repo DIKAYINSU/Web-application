@@ -1,11 +1,13 @@
 import React from 'react'
+import PageBanner from '../components/PageBanner'
 
 function Contact() {
     return (
 
         <>
-            <h1>This is Contact Page</h1>
-        </>
+             <PageBanner Heading="Contact US" SubHeading="This is Sub Heading for contact page"/>
+               {/* <h1>hleoo</h1>  */}
+          </>
     )
 }
 

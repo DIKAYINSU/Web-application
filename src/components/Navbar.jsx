@@ -134,36 +134,36 @@ function Navbar() {
                 <div className="absolute top-full left-0 z-20 mt-1 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
                   <ul className="py-2 text-sm text-gray-700 dark:text-gray-400">
                     <li>
-                      <a
-                        href="#"
+                      <NavLink
+                        to="/Machined"
                         className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Machined Components
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <NavLink
+                        to="/Molded"
                         className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Molding Components
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <NavLink
+                        to="/Railways"
                         className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Railways
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <NavLink
+                        to="/Defence"  
                         className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Defence
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -171,26 +171,26 @@ function Navbar() {
             </li>
 
             <li>
-              <a
-                href="#"
+              <NavLink
+                to="/Gallery"
                 className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${
                   isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
                 } transition-colors duration-300`}
               >
                 Gallery
                 <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NavLink
+                to="/Contact"
                 className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${
                   isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
                 } transition-colors duration-300`}
               >
                 Contact Us
                 <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
