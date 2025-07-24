@@ -100,7 +100,7 @@ function App() {
       requestAnimationFrame(raf);
     }
     lenis.on('scroll', (e) => {
-      console.log('Scrolling', e);
+      // console.log('Scrolling', e);
     });
 
     requestAnimationFrame(raf);
