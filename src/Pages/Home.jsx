@@ -7,6 +7,8 @@ import AboutUs from '../components/AboutUs'
 import Categories from '../components/Categories'
 import Certification from '../components/Certification'
 import OurProducts from '../components/OurProducts'
+import ClientSlider from '../components/ClientSlider'
+
 
 function Home() {
   return (
@@ -20,6 +22,7 @@ function Home() {
       <WhatWeDO/>
       <Categories/>
       <OurProducts/>
+       <ClientSlider/>
       <Certification/>
 
 
