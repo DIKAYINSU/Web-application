@@ -11,7 +11,18 @@ import OurProducts from '../components/OurProducts'
 function Home() {
   return (
    <>
-   <h1>This is Home</h1>
+       <div id="particle-section" className="h-screen w-full">
+        <Particles />
+      </div>
+      <Hero/>
+      <HorizontalScroll/>
+      <AboutUs/>
+      <WhatWeDO/>
+      <Categories/>
+      <OurProducts/>
+      <Certification/>
+
+
    </>
   )
 }
