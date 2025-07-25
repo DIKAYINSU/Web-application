@@ -1,7 +1,7 @@
 import React from 'react';
 import LightGallery from 'lightgallery/react';
 
-// CSS styles
+// Styles
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
@@ -10,27 +10,43 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
+// Image
+import img1 from '../assets/Images/img1.jpeg';
+
 const LightBox = () => {
   const onInit = () => {
-    console.log('lightGallery has been initialized');
+    console.log('lightGallery initialized');
   };
 
   return (
-    <div className="p-4 max-w-5xl mx-auto">
-      <h2 className="text-2xl font-semibold mb-6">Photo Gallery</h2>
-      <LightGallery onInit={onInit} speed={500} plugins={[lgThumbnail, lgZoom]}>
-        <a href="./src/assets/Images/img1.jpeg">
-          <img src="./src/assets/Images/img1.jpeg" alt="Image 1" className="w-32 m-2 inline-block rounded shadow" />
-        </a>
-        <a href="/img/full2.jpg">
-          <img src="./src/assets/Images/img1.jpeg" alt="Image 2" className="w-32 m-2 inline-block rounded shadow" />
-        </a>
-        {/* Add more images as needed */}
-      </LightGallery>
-    </div>
+    <section className="px-4 py-10 bg-gray-100">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8">Our Gallery</h2>
+
+        <LightGallery
+          onInit={onInit}
+          speed={500}
+          download={false}
+          plugins={[lgThumbnail, lgZoom]}
+          elementClassNames="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+        >
+          {Array.from({ length: 8 }).map((_, index) => (
+            <a
+              href={img1}
+              key={index}
+              className="block overflow-hidden rounded shadow hover:shadow-lg transition"
+            >
+              <img
+                src={img1}
+                alt={`Image ${index + 1}`}
+                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </a>
+          ))}
+        </LightGallery>
+      </div>
+    </section>
   );
 };
 
 export default LightBox;
-
-
