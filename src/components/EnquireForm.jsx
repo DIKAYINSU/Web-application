@@ -117,6 +117,29 @@ function EnquireForm() {
                         </div>
 
 
+<<<<<<< HEAD
+                    <div className='text-black '>
+        
+                     {/* <TextType/> */}
+                     <TextType className='text-4xl font-Roboto pt-30'
+  text={["Hello I AM Amol lokhand and i develop this website using react and tailwind css and i want to this website for users to mmake orfer ", "DI KAY INSULATION INDUSTRIES MAKE HIGH QUALITY FRP COMPOSITE MATERIAL FOR WIND AND DEFENCE INDUSTIRS", "  THIS WEBSITE MADE BY AMOL LOKHANDE USEING LOVE "]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor={true}
+  cursorCharacter="|" 
+/>  
+
+{/* 
+<h1 className='text-2xl font-bold text-center pl-5 ' >Let's Connect</h1>
+                        <h2 className='text-4xl font-bold text-center pl-5 pt-2'>Send Your Enquiry</h2>
+                        <p className='text-base font-normal text-left pl-10 pt-5 pb-5   '>Looking for FRP composite materials? Send your enquiry today. Our team will respond promptly with the right solutions tailored to your industrial requirements.</p>
+
+ */}
+
+                        
+
+=======
+>>>>>>> cffd3042e45dc4472ab235e4d08bef419432baa2
                     </div>
                 </div>
             </div>
