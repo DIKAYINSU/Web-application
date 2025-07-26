@@ -91,22 +91,22 @@ function Navbar() {
               <NavLink
                 to="/"
                 className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${
-                  isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
+                  isOverParticle ? 'text-white' : 'text-black hover:text-[#00a6f4]'
                 } transition-colors duration-300`}
               >
                 Home
-                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+                <span className="block w-0 group-hover:w-full h-0.5 bg-[#00a6f4] transition-all duration-300"></span>
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/About"
                 className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${
-                  isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
+                  isOverParticle ? 'text-white' : 'text-black hover:text-[#00a6f4]'
                 } transition-colors duration-300`}
               >
                 About Us
-                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+                <span className="block w-0 group-hover:w-full h-0.5 bg-[#00a6f4] transition-all duration-300"></span>
               </NavLink>
             </li>
 
@@ -115,7 +115,7 @@ function Navbar() {
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 className={`flex items-center justify-between w-full py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent ${
-                  isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
+                  isOverParticle ? 'text-white' : 'text-black hover:text-[#00a6f4]'
                 } md:p-0 md:w-auto`}
               >
                 Products
@@ -174,22 +174,22 @@ function Navbar() {
               <NavLink
                 to="/Gallery"
                 className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${
-                  isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
+                  isOverParticle ? 'text-white' : 'text-black hover:text-[#00a6f4]'
                 } transition-colors duration-300`}
               >
                 Gallery
-                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+                <span className="block w-0 group-hover:w-full h-0.5 bg-[#00a6f4] transition-all duration-300"></span>
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/Contact"
                 className={`group relative block py-2 px-3 rounded-sm md:hover:bg-transparent md:p-0 ${
-                  isOverParticle ? 'text-white' : 'text-black hover:text-blue-700'
+                  isOverParticle ? 'text-white' : 'text-black hover:text-[#00a6f4]'
                 } transition-colors duration-300`}
               >
                 Contact Us
-                <span className="block w-0 group-hover:w-full h-0.5 bg-blue-700 transition-all duration-300"></span>
+                <span className="block w-0 group-hover:w-full h-0.5 bg-[#00a6f4] transition-all duration-300"></span>
               </NavLink>
             </li>
           </ul>

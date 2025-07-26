@@ -8,11 +8,15 @@ import Categories from '../components/Categories'
 import Certification from '../components/Certification'
 import OurProducts from '../components/OurProducts'
 import ClientSlider from '../components/ClientSlider'
+import MyCertificate from '../components/Mycertificate'
+
+
 
 
 function Home() {
   return (
-   <>
+   <> 
+
        <div id="particle-section" className="h-screen w-full">
         <Particles />
       </div>
@@ -23,7 +27,8 @@ function Home() {
       <Categories/>
       <OurProducts/>
        <ClientSlider/>
-      <Certification/>
+    <MyCertificate/>
+   
 
 
    </>

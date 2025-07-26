@@ -10,8 +10,9 @@ function AboutUs() {
 
       </div>
       <div className="about-text fade-up">
-        <span className="text-4xl font-Roboto font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">About Us</span>
-
+<span className="text-3xl font-Roboto font-extrabold bg-gradient-to-r from-[#00a6f4] via-blue-500 to-blue-600 bg-clip-text text-transparent">
+  About Us
+</span>
         <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
         <h2 className='font-Roboto text-xl pt-6 font-bold'>Shaping Tomorrow’s Industries with Advanced FRP Solutions</h2>
         <p className='font-Roboto text-lg pt-3'><span className="a-bold">Di Kay Insulation Industries Pvt. Ltd.</span> is a trusted manufacturer of <span

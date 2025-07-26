@@ -80,6 +80,12 @@ function OurProducts() {
  
      <div className='pt-15 m-5'>
       <h1 className="text-4xl font-bold align text-center pt-5">Our Products</h1>
+      {/* <div className='text-center "'>
+      <span className="text-3xl text-center font-Roboto font-extrabold bg-gradient-to-r from-[#00a6f4] via-blue-500 to-blue-600 bg-clip-text text-transparent">
+ Our Products
+</span>
+    </div> */}
+      
       <h3 className="text-lg text-left font-bold pl-10 pt-8 font-Roboto">Reliable FRP Product Manufacturers for Electrical,
         Railways,Renewable Energy and More</h3>
       <p className="font-Roboto text-lg text-left pl-10 pt-5 font-medium ">At Di Kay Insulation Industries Pvt. Ltd., we specialize in manufacturing

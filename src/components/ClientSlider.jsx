@@ -19,10 +19,17 @@ const clients = [
 
 const ClientSlider = () => {
   return (
-    <section className=" bg-gray-100">
-      <h2 className="text-center text-2xl font-semibold mb-6 text-gray-800">
+    <>
+     <div className='text-center pt-10 bg-gray-100'>
+      <span className="text-3xl text-center font-Roboto font-extrabold bg-gradient-to-r from-[#00a6f4] via-blue-500 to-blue-600 bg-clip-text text-transparent">
+ Our Clients
+</span>
+    </div>
+    <section className="bg-gray-100  h-[35vh] flex justify-center items-center">
+      {/* <h2 className="text-center text-2xl font-semibold mb-6 text-gray-800">
         Our Clients
-      </h2>
+      </h2> */}
+       
       <div className="max-w-6xl mx-auto px-4">
         <Swiper
          
@@ -49,6 +56,7 @@ const ClientSlider = () => {
         </Swiper>
       </div>
     </section>
+    </>
   );
 };
 
