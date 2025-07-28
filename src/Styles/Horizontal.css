@@ -4,7 +4,12 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: #f9f7f3
+  /* background-color: #d1e2f3; */
+  /* background-image: url('../assets/Images/bg.jpg'); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+
 }
 
 .races {

@@ -1,6 +1,4 @@
 import React from 'react'
-import AboutBanner from '../assets/Images/AboutBanner.jpg'
-import WhatWeDO from '../components/WhatWeDO'
 import '../Styles/custom.css'
 import Founder from '../components/Founder'
 
@@ -32,10 +30,10 @@ function About() {
 
   <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 md:px-20">
     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-      Welcome to Our Website
+     About Us 
     </h1>
     <p className="text-white text-base sm:text-lg md:text-xl max-w-2xl">
-      Your trusted partner in innovation and excellence.
+     Delivering Reliable FRP & Insulation Solutions for India’s Core Industries.
     </p>
     {/* <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-md transition">
       Get Started

@@ -11,7 +11,7 @@ function Contact() {
         <>
              <PageBanner Heading="Contact US" SubHeading="This is Sub Heading for contact page"/>
               <EnquireForm/>
-              <LightBox/>
+             
              
           </>
     )

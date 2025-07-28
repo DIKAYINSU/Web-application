@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import FooterLogo from '../assets/WeblogoWhite.png'
 
 function Footer() {
   return (
@@ -13,7 +15,7 @@ function Footer() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                 d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
             </svg> */}
-            <img src=".\src\assets\WeblogoWhite.png" className='h-12 hover:scale-103 hover:transition all duration-300 ease-in-out' alt="" />
+            <img src={FooterLogo} className='h-12 hover:scale-103 hover:transition all duration-300 ease-in-out' alt="" />
           </div>
           <p className="text-gray-400">Engineered FRP materials for strength, safety, and sustainability.</p>
           <div className="flex space-x-4">
@@ -55,50 +57,45 @@ function Footer() {
         <div className="space-y-4">
           <h3 className="text-lg font-semibold">Quick Links</h3> 
           <ul className="space-y-2">
-               <li>
-      <a href="#" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">
-        Home
-      </a>
-    </li>
-
-            <li><a href="#" className="text-gray-400 hover:text-[#00a6f4] transition">About Us</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-[#00a6f4] transition">Services</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-[#00a6f4] transition">Pricing</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-[#00a6f4] transition">Blog</a></li>
+            {/* <li><a href="#"  className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Home</a></li> */}
+            <li><Link to="/"  className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Home</Link></li>
+            <li><Link to="/About" className="text-gray-400 hover:text-[#00a6f4] transition">About Us</Link></li>
+            <li><Link to="/Gallery" className="text-gray-400 hover:text-[#00a6f4] transition">Gallery</Link></li>
+            <li><Link to="/Contact" className="text-gray-400 hover:text-[#00a6f4] transition">Contact Us</Link></li>
+            <li><Link to="#" className="text-gray-400 hover:text-[#00a6f4] transition">Blog</Link></li>
           </ul>
         </div>
 
         {/* <!-- Services --> */}
         <div className="space-y-4">
-          <h3 className="text-lg font-semibold">Services</h3>
+          <h3 className="text-lg font-semibold">Proucts</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="text-gray-400 hover:text-white transition">Web Development</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white transition">Mobile Apps</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white transition">UI/UX Design</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white transition">Digital Marketing</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white transition">Cloud Solutions</a></li>
+            <li><Link to="/Machined" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Machined Products</Link></li>
+            <li><Link to="/Molded" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Molded Products</Link></li>
+            <li><Link to="Railways" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Railways</Link></li>
+            <li><Link to="Defence" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Defence</Link></li>
+            <li><Link to="#" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Custom Solutions</Link></li>
           </ul>
         </div>
 
         {/* <!-- Contact --> */}
         <div className="space-y-4">
-          <h3 className="text-lg font-semibold">Contact Us</h3>
-          <address className="not-italic text-gray-400">
-            <p>123 Business Ave</p>
-            <p>San Francisco, CA 94107</p>
-            <p className="mt-2">Email: <a href="mailto:info@company.com"
-                className="hover:text-white transition">info@company.com</a></p>
-            <p>Phone: <a href="tel:+11234567890" className="hover:text-white transition">+1 (123) 456-7890</a></p>
+          <h3 className="text-lg font-semibold">Get In Touch</h3>
+          <address className="not-italic text-gray-400 ">
+            <p className='hover:text-[#00a6f4] transition-transform transform hover:duration-300 ease-in-out'>9-E Industrial Area Govindpura <br/>Bhopal-462023 Madhya Pradesh,India</p>
+            <p className='hover:text-[#00a6f4] transition-transform transform hover:duration-300 ease-in-out'></p>
+            <p className="mt-2">Email: <a href="mailto:dkinsu2010@gmail.com"
+                className="hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">dkinsu2010@gmail.com</a></p>
+            <p>Phone: <a href="tel:+11234567890" className="hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">+91 6266161724</a></p>
           </address>
         </div>
       </div>
 
       <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
-        <p className="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Company. All rights reserved.</p>
+        <p className="text-gray-500 text-sm mb-4 md:mb-0">©Design & Developed <i className='fa fa-heart'></i>  By This Guy </p>
         <div className="flex space-x-6">
-          <a href="#" className="text-gray-500 hover:text-white text-sm transition">Privacy Policy</a>
-          <a href="#" className="text-gray-500 hover:text-white text-sm transition">Terms of Service</a>
-          <a href="#" className="text-gray-500 hover:text-white text-sm transition">Cookies</a>
+        <p className="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Company. All rights reserved.</p>
+          
         </div>
       </div>
     </div>
