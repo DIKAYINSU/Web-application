@@ -10,8 +10,21 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
-// Image
-import img1 from '../assets/Images/img1.jpeg';
+// Image Array — replace these with your actual images
+const images = [
+  './src/assets/Images/certificateOne.jpg',
+  './src/assets/Images/certificateOne.jpg',
+  './src/assets/Images/certificateOne.jpg',
+  './src/assets/Images/certificateOne.jpg',
+  './src/assets/Images/certificateOne.jpg',
+  './src/assets/Images/certificateOne.jpg',
+  './src/assets/Images/img1.jpeg',
+  './src/assets/Images/img1.jpeg',
+  './src/assets/Images/img1.jpeg',
+  './src/assets/Images/bg.jpg',
+  './src/assets/Images/img1.jpeg',
+ 
+];
 
 const LightBox = () => {
   const onInit = () => {
@@ -19,8 +32,8 @@ const LightBox = () => {
   };
 
   return (
-    <section className="px-4 py-10 bg-gray-100">
-      <div className="max-w-6xl mx-auto">
+    <section className="px-4 py-10 bg-gray-100 w-full">
+      <div className="max-w-[1600px] mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Our Gallery</h2>
 
         <LightGallery
@@ -28,22 +41,28 @@ const LightBox = () => {
           speed={500}
           download={false}
           plugins={[lgThumbnail, lgZoom]}
-          elementClassNames="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+          elementClassNames="columns-1 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4"
         >
-          {Array.from({ length: 8 }).map((_, index) => (
+          {images.map((src, index) => (
             <a
-              href={img1}
               key={index}
-              className="block overflow-hidden rounded shadow hover:shadow-lg transition"
+              href={src}
+              className="block mb-4 overflow-hidden rounded shadow hover:shadow-lg transition break-inside-avoid"
             >
               <img
-                src={img1}
-                alt={`Image ${index + 1}`}
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+                src={src}
+                alt={`Gallery Image ${index + 1}`}
+                className="w-full max-w-full min-h-[300px] object-cover hover:scale-105 transition-transform duration-300"
               />
             </a>
           ))}
         </LightGallery>
+
+        {images.length === 0 && (
+          <p className="text-center text-gray-500 mt-6">
+            Gallery coming soon. Images will be added shortly.
+          </p>
+        )}
       </div>
     </section>
   );

@@ -15,9 +15,9 @@ function EnquireForm() {
 
                     <div className='bg-white'>
 
-                        <h1 className='text-2xl font-bold text-center pl-5 ' >Let's Connect</h1>
+                        <h1 className='text-2xl font-bold text-center pl-5 pt-12'>Let's Connect</h1>
                         <h2 className='text-4xl font-bold text-center pl-5 pt-2'>Send Your Enquiry</h2>
-                        <p className='text-base font-normal text-left pl-10 pt-5 pb-5   '>Looking for FRP composite materials? Send your enquiry today. Our team will respond promptly with the right solutions tailored to your industrial requirements.</p>
+                        <p className='text-base font-normal text-left pl-10 pt-5 pb-5 '>Looking for FRP composite materials? Send your enquiry today. Our team will respond promptly with the right solutions tailored to your industrial requirements.</p>
 
 
 
