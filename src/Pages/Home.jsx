@@ -9,6 +9,7 @@ import Certification from '../components/Certification'
 import OurProducts from '../components/OurProducts'
 import ClientSlider from '../components/ClientSlider'
 import MyCertificate from '../components/Mycertificate'
+import MyCarousel from '../components/MyCarousel'
 
 
 
@@ -20,7 +21,8 @@ function Home() {
        <div id="particle-section" className="h-screen w-full">
         <Particles />
       </div>
-      <Hero/>
+      {/* <Hero/> */}
+      <MyCarousel/>
       <HorizontalScroll/>
       <AboutUs/>
       <WhatWeDO/>

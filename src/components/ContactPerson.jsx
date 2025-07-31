@@ -91,7 +91,7 @@ function ContactPerson() {
                                 </div>
                                 {/* Back Side */}
                                 <div className="absolute w-full h-full bg-white text-gray-800 flex flex-col justify-center items-center rounded-xl sm:[transform:rotateY(180deg)] backface-hidden">
-                                    <h3 className="text-xl font-semibold">Mr. D.K. Kohli</h3>
+                                    <h3 className="text-xl font-semibold">M/S Sonal Kohli Minocha</h3>
                                     <p className="text-sm text-gray-500">CEO</p>
                                     <p className="text-gray-700 mt-2">📞 +91 9876543210</p>
                                 </div>
@@ -102,11 +102,11 @@ function ContactPerson() {
                         <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
                             <div className="relative w-full h-full transition-transform duration-700 sm:[transform-style:preserve-3d] sm:group-hover:[transform:rotateY(180deg)]">
                                 <div className="absolute w-full h-full bg-[#00a6f4] text-white flex justify-center items-center rounded-xl backface-hidden hidden sm:flex">
-                                    <h3 className="text-xl font-bold">Sr. Sales Executive</h3>
+                                    <h3 className="text-xl font-bold">Director</h3>
                                 </div>
                                 <div className="absolute w-full h-full bg-white text-gray-800 flex flex-col justify-center items-center rounded-xl sm:[transform:rotateY(180deg)] backface-hidden">
-                                    <h3 className="text-xl font-semibold">Mr. Rajesh Sharma</h3>
-                                    <p className="text-sm text-gray-500">Sr. Sales Executive</p>
+                                    <h3 className="text-xl font-semibold">Mr. Dilip Kumar Kohli</h3>
+                                    <p className="text-sm text-gray-500">Director</p>
                                     <p className="text-gray-700 mt-2">📞 +91 9123456789</p>
                                 </div>
                             </div>
@@ -116,11 +116,11 @@ function ContactPerson() {
                         <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
                             <div className="relative w-full h-full transition-transform duration-700 sm:[transform-style:preserve-3d] sm:group-hover:[transform:rotateY(180deg)]">
                                 <div className="absolute w-full h-full bg-[#00a6f4] text-white flex justify-center items-center rounded-xl backface-hidden hidden sm:flex">
-                                    <h3 className="text-xl font-bold">Marketing Executive</h3>
+                                    <h3 className="text-xl font-bold">Sr. Sales Executive</h3>
                                 </div>
                                 <div className="absolute w-full h-full bg-white text-gray-800 flex flex-col justify-center items-center rounded-xl sm:[transform:rotateY(180deg)] backface-hidden">
-                                    <h3 className="text-xl font-semibold">Mr. Amol Lokhande</h3>
-                                    <p className="text-sm text-gray-500">Marketing Executive</p>
+                                    <h3 className="text-xl font-semibold">Mr. Anil Kumar Sharma</h3>
+                                    <p className="text-sm text-gray-500">Sr. Sales Executive</p>
                                     <p className="text-gray-700 mt-2">📞 +91 9988776655</p>
                                 </div>
                             </div>
