@@ -7,27 +7,29 @@ import '../Styles/CarouselCss.css';
 const slides = [
   {
     image: './src/assets/Images/wind.jpg',
-    heading: 'Powering the Future',
-    subheading: 'Advanced FRP Components for Wind Energy',
-    buttonText: 'Explore Solutions'
+    heading: 'Future-Ready. Field-Tested.',
+    subheading: ' FRP Components Built for Wind Industry Demands',
+    buttonText: 'Explore Products'
+  },
+
+  {
+    image: './src/assets/Images/railwaysImage.jpg',
+    heading: 'Durability That Moves Railways',
+    subheading: 'Precision FRP Parts for Smooth Railway Operations',
+    buttonText: 'Explore Products'
   },
   {
-    image: 'https://source.unsplash.com/1600x900/?hydropower',
-    heading: 'Hydro Energy Reinvented',
-    subheading: 'Insulation Built for Harsh Environments',
-    buttonText: 'View Products'
-  },
-  {
-    image: 'https://source.unsplash.com/1600x900/?train,railways',
-    heading: 'Railway Reliability',
-    subheading: 'Precision FRP Parts for Railway Systems',
-    buttonText: 'Partner with Us'
+    image: './src/assets/Images/air.jpg',
+    heading: 'Material Matters in Defence',
+    subheading: 'Engineered FRP Solutions for Strategic Military Applications',
+    buttonText: 'Explore Products'
+
   },
 ];
 
 function MyCarousel() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden ">
       <Swiper
         modules={[Navigation]}
         navigation={{ nextEl: '.custom-next', prevEl: '.custom-prev' }}
@@ -40,8 +42,8 @@ function MyCarousel() {
               className="w-full h-screen bg-cover bg-center relative flex items-center justify-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="text-center text-white fade-text-animation px-4">
-                <h2 className="text-4xl md:text-6xl font-extrabold drop-shadow-lg">{slide.heading}</h2>
+              <div className="font-Roboto text-center text-white fade-text-animation px-4 font-Roboto">
+                <h2 className="font-Roboto text-4xl md:text-6xl font-extrabold drop-shadow-lg ">{slide.heading}</h2>
                 <p className="mt-4 text-lg md:text-2xl font-medium">{slide.subheading}</p>
                 <button className="mt-6 px-6 py-3 bg-white text-[#00a6f4] font-semibold rounded-full hover:bg-[#00a6f4] hover:text-white transition duration-300">
                   {slide.buttonText}
