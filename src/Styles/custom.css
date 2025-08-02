@@ -114,12 +114,16 @@
 
 
 .about-image {
-  flex: 1 1 500px;
+  /* margin-top: 7rem; */
+  flex: 1 1 550px;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-image img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: transform .2s;
@@ -187,7 +191,10 @@
   }
 
   .about-image img {
-    background-size: cover;
+    background-size: contain;
+     display: flex;
+     justify-content: center;
+     align-items: center;
   }
 
   .custom-list-item .text {

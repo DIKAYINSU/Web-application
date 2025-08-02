@@ -135,7 +135,7 @@ function ContactPerson() {
                                 <div className="absolute w-full h-full bg-white text-gray-800 flex flex-col justify-center items-center rounded-xl sm:[transform:rotateY(180deg)] backface-hidden">
                                     <h3 className="text-xl font-semibold">Mr. Amol Lokhande</h3>
                                     <p className="text-sm text-gray-500">Marketing Executive</p>
-                                    <p className="text-gray-700 mt-2">📞 +91 9988776655</p>
+                                    <p className="text-gray-700 mt-2">📞 +91 9988776655</p> 
                                 </div>
                             </div>
                         </div>

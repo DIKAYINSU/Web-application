@@ -37,10 +37,10 @@ const ClientSlider = () => {
           spaceBetween={30}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           breakpoints={{
-            320: { slidesPerView: 2 },
-            640: { slidesPerView: 3 },
+            320: { slidesPerView: 5 },
+            640: { slidesPerView: 5 },
             768: { slidesPerView: 4 },
-            1024: { slidesPerView: 5 },
+             1024: { slidesPerView: 5 },
           }}
           loop={true}
         >
@@ -49,7 +49,7 @@ const ClientSlider = () => {
               <img
                 src={client.src}
                 alt={client.alt}
-                className="h-32 object-cover transition duration-300"
+                className=" sm:h-64 md:h-32 object-cover transition duration-300"
               />
             </SwiperSlide>
           ))}

@@ -1,12 +1,13 @@
 import React from 'react'
+import OfficeImage from '../assets/Images/officeimage.webp'
 
 function AboutUs() {
   return (
     <>
      <section className="about-section" id="about">
     <div className="about-container">
-      <div className="about-image fade-up">
-        <img src=".\src\assets\Images\img1.jpeg" alt="About DiKay"/>
+      <div className="about-image fade-up ">
+        <img className='mt-18 sm:h-100' src={OfficeImage} alt="About DiKay"/>
 
       </div>
       <div className="about-text fade-up">

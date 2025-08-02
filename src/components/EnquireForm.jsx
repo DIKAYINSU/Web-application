@@ -14,7 +14,7 @@ function EnquireForm() {
             .sendForm('service_m0poya1', 'template_374kzs4', myform.current, {
                 publicKey: 'bAwpQPfJpMcMkIDSI',
             })
-            .then(
+            .then(  
                 () => {
                     console.log('SUCCESS!');
                     myform.current.reset(); // ✅ Reset form here
