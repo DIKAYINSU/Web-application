@@ -13,16 +13,7 @@ import lgZoom from 'lightgallery/plugins/zoom';
 // Image Array — replace these with your actual images
 const images = [
   './src/assets/Images/certificateOne.jpg',
-  './src/assets/Images/certificateOne.jpg',
-  './src/assets/Images/certificateOne.jpg',
-  './src/assets/Images/certificateOne.jpg',
-  './src/assets/Images/certificateOne.jpg',
-  './src/assets/Images/certificateOne.jpg',
-  './src/assets/Images/img1.jpeg',
-  './src/assets/Images/img1.jpeg',
-  './src/assets/Images/img1.jpeg',
-  './src/assets/Images/bg.jpg',
-  './src/assets/Images/img1.jpeg',
+
  
 ];
 

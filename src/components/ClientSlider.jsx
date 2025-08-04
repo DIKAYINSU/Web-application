@@ -14,7 +14,7 @@ const clients = [
   { id: 7, src: "./src/assets/Client/bhel.png", alt: "Client 6" },
   { id: 8, src: "./src/assets/Client/suzlon.png", alt: "Client 6" },
   { id: 9, src: "./src/assets/Client/tdps.png", alt: "Client 6" },
-  { id: 10, src: "./src/assets/Client/voith.png", alt: "Client 6" },
+  { id: 10, src: "./src/assets/Client/voith.png", alt: "Client 6" }
 ];
 
 const ClientSlider = () => {

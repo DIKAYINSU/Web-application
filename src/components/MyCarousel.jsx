@@ -6,20 +6,20 @@ import '../Styles/CarouselCss.css';
 
 const slides = [
   {
-    image: './src/assets/Images/wind.jpg',
+    image: './src/assets/Images/wind.webp',
     heading: 'Future-Ready. Field-Tested.',
     subheading: ' FRP Components Built for Wind Industry Demands',
     buttonText: 'Explore Products'
   },
 
   {
-    image: './src/assets/Images/railwaysImage.jpg',
+    image: './src/assets/Images/railwaysImage.webp',
     heading: 'Durability That Moves Railways',
     subheading: 'Precision FRP Parts for Smooth Railway Operations',
     buttonText: 'Explore Products'
   },
   {
-    image: './src/assets/Images/air.jpg',
+    image: './src/assets/Images/air.webp',
     heading: 'Material Matters in Defence',
     subheading: 'Engineered FRP Solutions for Strategic Military Applications',
     buttonText: 'Explore Products'

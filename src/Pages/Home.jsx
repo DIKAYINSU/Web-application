@@ -26,8 +26,8 @@ function Home() {
       <HorizontalScroll/>
       <AboutUs/>
       <WhatWeDO/>
-      <Categories/>
       <OurProducts/>
+      <Categories/>
        <ClientSlider/>
     <MyCertificate/>
    
