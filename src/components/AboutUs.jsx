@@ -4,8 +4,9 @@ import OfficeImage from '../assets/Images/officeimage.webp'
 function AboutUs() {
   return (
     <>
-     <section className="about-section" id="about">
-    <div className="about-container">
+   
+     <section className="about-section " id="about">
+    <div className="about-container  ">
       <div className="about-image fade-up ">
         <img className='mt-18 sm:h-100' src={OfficeImage} alt="About DiKay"/>
 

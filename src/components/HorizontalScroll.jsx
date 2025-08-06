@@ -47,10 +47,10 @@ function HorizontalScroll() {
       <div ref={racesRef} className="races font-Barlow@">
         <h2>DRIVEN</h2>
         <h2>BY</h2>
-        <h2>INNOVATION,</h2>
+        <h2><span>INNOVATION,</span></h2>
         <h2>COMMITTED</h2>
         <h2>TO</h2>
-        <h2 className="color">QUALITY</h2>
+        <h2><span ><span>QUALITY</span></span></h2>
       </div>
     </div>
   );

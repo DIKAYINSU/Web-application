@@ -28,7 +28,7 @@ function MyCertificate() {
                 <h2 className="text-2xl font-semibold mb-1 group-hover:text-[#00a6f4] dark:text-white">
                  ISO:9001:2015 Certification
                 </h2>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">Sub Heading</p>
+                <p className="text-gray-700 dark:text-gray-300 mb-4"></p>
               </div>
             </div>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Styles/custom.css'
 import Founder from '../components/Founder'
+import AboutBanner from '../Assets/Images/officeImage.webp'
 
 function About() {
   return (
@@ -20,7 +21,7 @@ function About() {
 <div
   className="relative w-full h-[70vh] md:h-[90vh] bg-cover bg-center bg-no-repeat"
     style={{
-      backgroundImage: "url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1470&q=80')"
+      backgroundImage: `url(${AboutBanner})`
     }}
   //  style={{
   //   backgroundImage: `url(${AboutBanner})`

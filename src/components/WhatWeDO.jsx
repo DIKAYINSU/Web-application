@@ -4,7 +4,10 @@ function WhatWeDO() {
   return (
     <>
 
-      <section className="about-section background " id="whatwedo">
+      <section className="about-texture" id="whatwedo">
+        
+
+     
         <div className="about-container ">
 
           <div className="about-text fade-up ">
@@ -49,11 +52,12 @@ function WhatWeDO() {
 
 
           <div className="about-image fade-up">
-            <img src="./src/assets/Images/img1.jpeg" alt="About DiKay" />
+            <img src="./src/assets/Images/whatwedo.webp" alt="About DiKay" />
 
           </div>
 
         </div>
+          
       </section>
 
     </>

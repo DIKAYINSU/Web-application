@@ -5,10 +5,10 @@
   overflow: hidden;
   position: relative;
   /* background-color: #d1e2f3; */
-  /* background-image: url('../assets/Images/bg.jpg'); */
-  /* background-repeat: no-repeat;
+  /* background-image: url('../assets/Images/texture2.jpg'); */
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; */
+  background-attachment: scroll;
 
 }
 
@@ -26,10 +26,24 @@
   font-size: 23vw;
   flex-shrink: 0;
   padding: 0 0.3em;
-  color: #000000;
+  color: black;
   white-space: nowrap;
   line-height: 1;
   font-family: Azonix;
+  /* text-transform: uppercase; */
+  
+}
+.races h2 span {
+ 
+  color: #00a6f4;
+ 
+  /* text-transform: uppercase; */
+  
+}
+.races h2 span span {
+
+  color: #499eee !important;
+  
   /* text-transform: uppercase; */
   
 }
