@@ -5,6 +5,7 @@ function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const navbarRef = useRef(null);
+  let timeoutId;
 
   const [isOverParticle, setIsOverParticle] = useState(false); // ✅ Default to false
   const location = useLocation(); // ✅ Get current route
@@ -59,13 +60,13 @@ function Navbar() {
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src={isOverParticle ? './src/assets/WeblogoWhite.png' : './src/assets/Weblogo.png'}
             className="h-12"
             alt="Logo"
           />
-        </a>
+        </NavLink>
 
         {/* Mobile Toggle */}
         <button
@@ -109,66 +110,73 @@ function Navbar() {
                 <span className="block w-0 group-hover:w-full h-0.5 bg-[#00a6f4] transition-all duration-300"></span>
               </NavLink>
             </li>
+{/* Dropdown */}
+<li
+  className="relative"
+  onMouseEnter={() => {
+      clearTimeout(timeoutId);
+    setDropdownOpen(true);
+  }}
+  onMouseLeave={() => {
+    timeoutId = setTimeout(() => setDropdownOpen(false), 200);
+  }}
+>
+  <button
+    className={`flex items-center justify-between w-full py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent ${
+      isOverParticle ? 'text-white' : 'text-black hover:text-[#00a6f4]'
+    } md:p-0 md:w-auto`}
+  >
+    Products
+    <svg
+      className="w-2.5 h-2.5 ml-2.5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 10 6"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+    </svg>
+  </button>
 
-            {/* Dropdown */}
-            <li className="relative">
-              <button
-                onClick={() => setDropdownOpen(!dropdownOpen)}
-                className={`flex items-center justify-between w-full py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent ${
-                  isOverParticle ? 'text-white' : 'text-black hover:text-[#00a6f4]'
-                } md:p-0 md:w-auto`}
-              >
-                Products
-                <svg
-                  className="w-2.5 h-2.5 ml-2.5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 10 6"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
-                </svg>
-              </button>
-
-              {dropdownOpen && (
-                <div className="absolute top-full left-0 z-20 mt-1 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                  <ul className="py-2 text-sm text-gray-700 dark:text-gray-400">
-                    <li>
-                      <NavLink
-                        to="/Machined"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >
-                        Machined Components
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/Molded"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >
-                        Molding Components
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/Railways"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >
-                        Railways
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/Defence"  
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >
-                        Defence
-                      </NavLink>
-                    </li>
-                  </ul>
-                </div>
-              )}
-            </li>
+  {dropdownOpen && (
+    <div className="absolute top-full left-0 z-20 mt-1 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+      <ul className="py-2 text-sm text-gray-700 dark:text-gray-400">
+        <li>
+          <NavLink
+            to="/Machined"
+            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+          >
+            Machined Components
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/Molded"
+            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+          >
+            Molding Components
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/Railways"
+            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+          >
+            Railways
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/Defence"
+            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+          >
+            Defence
+          </NavLink>
+        </li>
+      </ul>
+    </div>
+  )}
+</li>
 
             <li>
               <NavLink
@@ -189,7 +197,9 @@ function Navbar() {
                 } transition-colors duration-300`}
               >
                 Contact Us
-                <span className="block w-0 group-hover:w-full h-0.5 bg-[#00a6f4] transition-all duration-300"></span>
+           <span className="relative block h-0.5 overflow-hidden bg-transparent">
+  <span className="absolute left-0 top-0 h-full w-full origin-left scale-x-0 bg-[#00a6f4] transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+</span>
               </NavLink>
             </li>
           </ul>

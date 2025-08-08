@@ -1,8 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useLocation  } from 'react-router-dom'
 import FooterLogo from '../assets/WeblogoWhite.png'
 
 function Footer() {
+   const location = useLocation();
+
+  const handleHomeClick = () => {
+    if (location.pathname === "/") {
+      // Already on home, scroll to top
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
   return (
   <>
   <footer className="bg-gray-900 text-white pt-12 pb-8">
@@ -58,7 +66,7 @@ function Footer() {
           <h3 className="text-lg font-semibold">Quick Links</h3> 
           <ul className="space-y-2">
             {/* <li><a href="#"  className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Home</a></li> */}
-            <li><Link to="/"  className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Home</Link></li>
+            <li><Link to="/"  onClick={handleHomeClick} className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Home</Link></li>
             <li><Link to="/About" className="text-gray-400 hover:text-[#00a6f4] transition">About Us</Link></li>
             <li><Link to="/Gallery" className="text-gray-400 hover:text-[#00a6f4] transition">Gallery</Link></li>
             <li><Link to="/Contact" className="text-gray-400 hover:text-[#00a6f4] transition">Contact Us</Link></li>

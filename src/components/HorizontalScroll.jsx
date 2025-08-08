@@ -7,9 +7,12 @@ import "../Styles/Horizontal.css";
 function HorizontalScroll() {
   const racesRef = useRef(null);
   const scrollTweenRef = useRef(null);
-  const location = useLocation(); // listen to route change
+  const location = useLocation();
 
   useLayoutEffect(() => {
+    // Always reset scroll on mount
+    window.scrollTo(0, 0);
+
     gsap.registerPlugin(ScrollTrigger);
 
     const races = racesRef.current;
@@ -32,15 +35,15 @@ function HorizontalScroll() {
       },
     });
 
-    // ScrollTrigger.refresh() helps stabilize during route changes
     ScrollTrigger.refresh();
 
     return () => {
       scrollTweenRef.current?.scrollTrigger?.kill();
       scrollTweenRef.current?.kill();
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // safety
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger.clearScrollMemory(); // clears saved scroll positions
     };
-  }, [location.pathname]); // re-run on route change
+  }, [location.pathname]);
 
   return (
     <div className="racesWrapper">
@@ -50,7 +53,7 @@ function HorizontalScroll() {
         <h2><span>INNOVATION,</span></h2>
         <h2>COMMITTED</h2>
         <h2>TO</h2>
-        <h2><span ><span>QUALITY</span></span></h2>
+        <h2><span><span>QUALITY</span></span></h2>
       </div>
     </div>
   );

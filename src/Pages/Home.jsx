@@ -24,12 +24,12 @@ function Home() {
       {/* <Hero/> */}
       <MyCarousel/>
       <HorizontalScroll/>
-      <AboutUs/>
       <WhatWeDO/>
+      <AboutUs/>
+    <MyCertificate/>
       <OurProducts/>
       <Categories/>
        <ClientSlider/>
-    <MyCertificate/>
    
 
 
