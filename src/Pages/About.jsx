@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/custom.css'
 import Founder from '../components/Founder'
-import AboutBanner from '../Assets/Images/officeImage.webp'
+import AboutBanner from '../Assets/Images/Banner3.jpg'
 
 function About() {
   return (
