@@ -3,27 +3,30 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import '../Styles/CarouselCss.css';
+import { Link, NavLink } from 'react-router-dom';
 
 const slides = [
   {
     image: './src/assets/Images/wind.webp',
     heading: 'Future-Ready. Field-Tested.',
     subheading: ' FRP Components Built for Wind Industry Demands',
-    buttonText: 'Explore Products'
+    buttonText: 'Explore Products',
+    Link:'/Wind'
   },
 
   {
     image: './src/assets/Images/railwaysImage.webp',
     heading: 'Durability That Moves Railways',
     subheading: 'Precision FRP Parts for Smooth Railway Operations',
-    buttonText: 'Explore Products'
+    buttonText: 'Explore Products',
+    Link:'/Railways'
   },
   {
     image: './src/assets/Images/air.webp',
     heading: 'Material Matters in Defence',
     subheading: 'Engineered FRP Solutions for Strategic Military Applications',
-    buttonText: 'Explore Products'
-
+    buttonText: 'Explore Products',
+    Link:'/Defence'
   },
 ];
 
@@ -45,8 +48,13 @@ function MyCarousel() {
               <div className="font-Roboto text-center text-white fade-text-animation px-4 font-Roboto">
                 <h2 className="font-Roboto text-4xl md:text-6xl font-extrabold drop-shadow-lg ">{slide.heading}</h2>
                 <p className="mt-4 text-lg md:text-2xl font-medium">{slide.subheading}</p>
-                <button className="mt-6 px-6 py-3 bg-white text-[#00a6f4] font-semibold rounded-full hover:bg-[#00a6f4] hover:text-white transition duration-300">
+                <button  className="mt-6 px-6 py-3 bg-white text-[#00a6f4] font-semibold rounded-full hover:bg-[#00a6f4] hover:text-white transition duration-300">
+                 <Link to={slide.Link}>     
                   {slide.buttonText}
+                 </Link>
+                 
+                  
+                
                 </button>
               </div>
             </div>

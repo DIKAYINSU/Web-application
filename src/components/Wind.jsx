@@ -1,11 +1,11 @@
 import React from 'react'
-import PageBanner from '../components/PageBanner'
+import PageBanner from './PageBanner'
 import FounderImage from '../assets/Images/img1.jpeg'
 
-function Machined() {
-    return (
-        <>
-            <PageBanner Heading="Machined Components" SubHeading="This is Sub-Heading " />
+function Wind() {
+  return (
+    <>
+    <PageBanner Heading="Wind Energy" SubHeading="This is Sub-Heading " />
 
             <div className='md:h-[80vh'>
 
@@ -45,8 +45,9 @@ function Machined() {
 
                 </div>
             </div>
-        </>
-    )
+    </>
+
+  )
 }
 
-export default Machined
+export default Wind

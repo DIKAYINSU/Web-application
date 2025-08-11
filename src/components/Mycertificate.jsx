@@ -1,7 +1,8 @@
 import React from 'react';
 import certificate1 from '../assets/Images/CertificateOne.jpg'
 import certificate2 from '../assets/Images/Certificate1.jpg'
-import certificate3 from '../assets/Images/iso.jpg'
+import ISO from '../assets/Images/iso.jpg'
+import FMPC from '../assets/Images/FMPMC.jpg'
 
 function MyCertificate() {
   return (
@@ -14,21 +15,21 @@ function MyCertificate() {
               Certification We Have
             </span>
           </div>
-
+    
           {/* Cards */}
           <div className="flex flex-wrap gap-8 justify-center items-center">
             {/* Card 1 */}
             <div className="group w-[18rem] sm:w-[21.5rem] bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
               <img
                 className="w-full h-auto max-h-[30rem] object-cover"
-                src={certificate3}
+                src={ISO}
                 alt="Certificate 1"
               />
               <div className="p-5">
                 <h2 className="text-2xl font-semibold mb-1 group-hover:text-[#00a6f4] dark:text-white">
                  ISO:9001:2015 Certification
                 </h2>
-                <p className="text-gray-700 dark:text-gray-300 mb-4"></p>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">Certified for International Quality Standards </p>
               </div>
             </div>
 
@@ -41,9 +42,9 @@ function MyCertificate() {
               />
               <div className="p-5">
                 <h2 className="text-2xl font-semibold mb-1 group-hover:text-[#00a6f4] dark:text-white">
-                  Certificate 1
+                 Certificate of Import Sustitute
                 </h2>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">Sub Heading</p>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">Certified for IMPORT SUBSTITUTE</p>
               </div>
             </div>
 
@@ -51,7 +52,7 @@ function MyCertificate() {
            <div className="group w-[18rem] sm:w-[21.5rem] bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
               <img
                 className="w-full h-auto max-h-[30rem] object-cover"
-                src={certificate3}
+                src={FMPC}
                 alt="Certificate 1"
               />
               <div className="p-5">

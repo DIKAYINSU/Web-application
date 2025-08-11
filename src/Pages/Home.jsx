@@ -16,24 +16,24 @@ import MyCarousel from '../components/MyCarousel'
 
 function Home() {
   return (
-   <> 
+    <>
 
-       <div id="particle-section" className="h-screen w-full">
+      <div id="particle-section" className="h-screen w-full">
         <Particles />
       </div>
       {/* <Hero/> */}
-      <MyCarousel/>
-      <HorizontalScroll/>
-      <WhatWeDO/>
-      <AboutUs/>
-    <MyCertificate/>
-      <OurProducts/>
-      <Categories/>
-       <ClientSlider/>
-   
+      <MyCarousel />
+      <HorizontalScroll />
+      <AboutUs />
+      <WhatWeDO />
+      <OurProducts />
+      <Categories />
+      <ClientSlider />
+      <MyCertificate />
 
 
-   </>
+
+    </>
   )
 }
 

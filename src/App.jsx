@@ -22,6 +22,8 @@ import Machined from './Pages/Machined';
 import Molded from './Pages/Molded';
 import Railways from './Pages/Railways';
 import Defence from './Pages/Defence';
+import Wind from './components/Wind';
+import Hydro from './components/Hydro';
 
 
 
@@ -65,7 +67,14 @@ function App() {
           path: "/Defence",
           element: <Defence/>
         },
-       
+        {
+          path: "/Wind",
+          element: <Wind/>
+        },
+         {
+          path: "/Hydro",
+          element: <Hydro/>
+        },
        
          
       ]
