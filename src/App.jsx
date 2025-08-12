@@ -22,8 +22,8 @@ import Machined from './Pages/Machined';
 import Molded from './Pages/Molded';
 import Railways from './Pages/Railways';
 import Defence from './Pages/Defence';
-import Wind from './components/Wind';
-import Hydro from './components/Hydro';
+import Wind from './Pages/Wind';
+import Hydro from './Pages/Hydro';
 
 
 

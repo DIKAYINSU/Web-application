@@ -2,7 +2,7 @@ import React from 'react';
 import certificate1 from '../assets/Images/CertificateOne.jpg'
 import certificate2 from '../assets/Images/Certificate1.jpg'
 import ISO from '../assets/Images/iso.jpg'
-import FMPC from '../assets/Images/FMPMC.jpg'
+import FMPCCI from '../assets/Images/FMPCCI.jpg'
 
 function MyCertificate() {
   return (
@@ -37,7 +37,8 @@ function MyCertificate() {
           <div className="group w-[18rem] sm:w-[21.5rem] bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
               <img
                 className="w-full h-auto max-h-[30rem] object-cover"
-                src={certificate1}
+              
+                  src={certificate1}
                 alt="Certificate 1"
               />
               <div className="p-5">
@@ -52,12 +53,12 @@ function MyCertificate() {
            <div className="group w-[18rem] sm:w-[21.5rem] bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
               <img
                 className="w-full h-auto max-h-[30rem] object-cover"
-                src={FMPC}
+                src={FMPCCI}
                 alt="Certificate 1"
               />
               <div className="p-5">
                 <h2 className="text-2xl font-semibold mb-1 group-hover:text-[#00a6f4] dark:text-white">
-                  Certificate 1
+                 FMPCCI Award Winner
                 </h2>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">Sub Heading</p>
               </div>

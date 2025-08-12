@@ -1,5 +1,5 @@
 import React from 'react'
-import PageBanner from './PageBanner'
+import PageBanner from '../components/PageBanner'
 import FounderImage from '../assets/Images/img1.jpeg'
 
 function Hydro() {
@@ -46,10 +46,7 @@ function Hydro() {
         </div>
       </div>
 
-      <a href="./src/assets/Images/img1.jpeg" download="w3logo">
-      <p>hello</p>
-        
-      </a>
+      
     </>
   )
 }
