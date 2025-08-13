@@ -1,7 +1,8 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
 import FounderImage from '../assets/Images/img1.jpeg'
-import Railbanner from '../Assets/Images/DefenceBanner2.jpg'
+import Railbanner from '../Assets/Images/DefenceBanner.jpg'
+import DefenceImage from '../Assets/Images/DefenceImage.jpg'
 
 function Defence() {
     return (
@@ -61,7 +62,7 @@ function Defence() {
                         <div className=' order-1 md:order-2 w-[100%] flex justify-center items-center'>
                             <img className=' h-[90%] pt-5 p-2 md:p-6 rounded-4xl shadow-md@
                     transition-all duration-300 
-                    hover: hover:scale-105  hover:rounded-2xl" ' src={FounderImage} alt="" />
+                    hover: hover:scale-105  hover:rounded-2xl" ' src={DefenceImage} alt="" />
     
                         </div>
     

@@ -36,25 +36,16 @@ function Wind() {
                 <div className='grid grid-cols-1 pl-2 pr-2 md:grid-cols-2 md:pl-10 md:pr-10 ] '>
 
                     <div className='p-7 md:p-2 order-2 md:order-1'>
-                        <h1 className='text-left font-bold text-3xl md:text-center pt-5 font-Roboto'>Machined Product</h1>
+                        <h1 className='text-left font-bold text-3xl md:text-center pt-5 font-Roboto'>Wind Energy</h1>
 
                         <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
                             <p className='font-Roboto text-lg pt-7'>
-                                With Many Decades of experience, we
-                                specialize in precision-engineered components used in electrical
-                                Machinery, Wind turbines, Hydro Generators, and Industrial Infrastructure. Our products are designed to
-                                perform in demanding environments—ensuring long-term efficiency, safety, and reliability across critical
-                                sectors.
+                                We specialize in manufacturing a comprehensive range of <span className='font-semibold'>Precision-Engineered FRP</span> and <span className='font-semibold'>Insulation</span> Components for the Wind Energy Sector, designed for <span>Exceptional Strength, Dimensional Accuracy,</span> and <span>Long Service Life.</span> Our Product Portfolio includes <span className='font-semibold'>Slot Wedges, Epoxy Strips, Top Packers, Base Strips, Layer Separators, Insulation Washers, Spacer Bandages, Fixing Clamps, Insulation Rings, Baffle Plates, Air Duct Plates, Cable Duct Shafts, Cotter Stator Segments, Insulated Washers,</span> and other <span>Custom-Engineered Solutions.</span>
                             </p>
                         </div>
                         <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
-                            <p className='font-Roboto text-lg pt-7'>
-                                With Many Decades of experience, we
-                                specialize in precision-engineered components used in electrical
-                                Machinery, Wind turbines, Hydro Generators, and Industrial Infrastructure. Our products are designed to
-                                perform in demanding environments—ensuring long-term efficiency, safety, and reliability across critical
-                                sectors.
-                            </p>
+                            <p className='font-Roboto text-lg pt-7 mb-5'>
+                               Every component is produced using <span>Advanced Manufacturing Techniques</span> and <span>Stringent Quality Controls</span> to meet the <span>Demanding Conditions</span> of <span>Modern Wind Turbines.</span> This <span>ensures Optimum Turbine Performance, Reduced Maintenance Downtime</span>, and <span>Dependable Support</span> for <span>Sustainable, Renewable Energy Generation.</span></p>
                         </div>
 
 
