@@ -1,7 +1,7 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
 import EnquireForm from '../components/EnquireForm'
-import AboutBanner from '../assets/Images/Banner3.jpg'
+// import ContactBanner from '../assets/Images/Banner3.jpg'
 
 
 function Contact() {
@@ -13,7 +13,7 @@ function Contact() {
             <div
                 className="relative w-full h-[70vh] md:h-[90vh] bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: `url(${AboutBanner})`
+                    // backgroundImage: `url(${ContactBanner})`
                 }}
 
             >
