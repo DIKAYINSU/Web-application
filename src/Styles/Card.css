@@ -1,7 +1,7 @@
 .cursur {
   width: 60px;
   height: 60px;
-  background-color: rgba(21, 143, 243, 0.9);
+  background-color: #00a6f4;
   border-radius: 50%;
   position: fixed;
   opacity: 0;
@@ -36,9 +36,18 @@
   font-weight: bold;
   color: #fff;
   overflow: hidden;
+  background-color: transparent ;
 }
 .animation-container{
       z-index: 20;
       }
 
+  @media(max-width:576px) {
+    .swiper-box .mySwiperOne {
+      padding-top: 5rem;  
+      padding-bottom: 6rem;  
+       width: 80vw;
+       height: auto;
+}
+  }
 
