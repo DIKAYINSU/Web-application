@@ -4,7 +4,12 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: #f9f7f3
+  /* background-color: #d1e2f3; */
+  /* background-image: url('../assets/Images/texture2.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+
 }
 
 .races {
@@ -21,10 +26,24 @@
   font-size: 23vw;
   flex-shrink: 0;
   padding: 0 0.3em;
-  color: #000000;
+  color: black;
   white-space: nowrap;
-  line-height: 1;
+  line-height: 1; 
   font-family: Azonix;
+  /* text-transform: uppercase; */
+  
+}
+.races h2 span {
+ 
+  color: #00a6f4;
+ 
+  /* text-transform: uppercase; */
+  
+}
+.races h2 span span {
+
+  color: #499eee !important;
+  
   /* text-transform: uppercase; */
   
 }

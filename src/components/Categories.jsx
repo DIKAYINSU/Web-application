@@ -4,8 +4,13 @@ function Categories() {
   return (
     <>
     
-  <div className="min-h-screen bg-gray-200 py-6 sm:py-12">
-    <h1 className="a-heading">Product Categories We Specialize In</h1>
+  <div className="min-h-screen bg-gray-200 py-6 sm:py-12 bg-[url(./src/assets/Images/textureL.jpg)] bg-no-repeat bg-cover ">
+    {/* <h1 className="a-heading">Product Categories We Specialize In</h1> */}
+    <div className='text-center'>
+      <span className="text-3xl text-center font-Roboto font-extrabold bg-gradient-to-r from-[#00a6f4] via-blue-500 to-blue-600 bg-clip-text text-transparent">
+  Product Categories We Specialize In
+</span>
+    </div>
 
     <h3 className="a-subheading">We specialize in the manufacturing of high-quality FRP components through three core
       methods: Machining, Molding, and Custom Fabrication — ensuring performance, reliability, and flexibility across

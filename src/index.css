@@ -26,6 +26,7 @@
 
   html,body{
       overflow-x: hidden;
+      height: auto;
   }
 .particles-container canvas {
   display: block;

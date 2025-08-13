@@ -4,14 +4,19 @@ function WhatWeDO() {
   return (
     <>
 
-      <section className="about-section background " id="whatwedo">
+      <section className="about-texture" id="whatwedo">
+        
+
+     
         <div className="about-container ">
 
           <div className="about-text fade-up ">
             {/* <h1 className="text-xl sm:text-xl md:text-xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent tracking-tight leading-tight transition-all duration-500 ease-in-out hover:scale-105">
               Transform Your Business with Innovation
             </h1> */}
-            <span className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">What We Do </span>
+          <span className="text-3xl font-Roboto font-extrabold bg-gradient-to-r from-[#00a6f4] via-blue-500 to-blue-600 bg-clip-text text-transparent">
+  What We Do
+</span>
 
             <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-105 hover:text-black">
               <p className="font-Roboto pt-6 text-lg">
@@ -47,11 +52,12 @@ function WhatWeDO() {
 
 
           <div className="about-image fade-up">
-            <img src="./src/assets/Images/img1.jpeg" alt="About DiKay" />
+            <img src="./src/assets/Images/whatwedo.webp" alt="About DiKay" />
 
           </div>
 
         </div>
+          
       </section>
 
     </>
