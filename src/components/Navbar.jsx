@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom'; // ✅ Added useLocation
+import Logo from '../assets/Weblogo.png';
+import LogoWhite from '../assets/WeblogoWhite.png';
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -8,6 +10,7 @@ function Navbar() {
   const navbarRef = useRef(null);
   let timeoutId;
   let timeoutId_;
+
 
 
   const [isOverParticle, setIsOverParticle] = useState(false); // ✅ Default to false
@@ -65,7 +68,7 @@ function Navbar() {
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src={isOverParticle ? './src/assets/WeblogoWhite.png' : './src/assets/Weblogo.png'}
+            src={isOverParticle ? `${Logo}` : `${LogoWhite}`}
             className="h-12"
             alt="Logo"
           />
