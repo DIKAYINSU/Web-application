@@ -1,5 +1,5 @@
 import React from 'react'
-import OfficeImage from '../assets/Images/officImage.webp'
+import OfficeImage from '../assets/Images/officeImage.webp'
 
 function AboutUs() {
   return (
