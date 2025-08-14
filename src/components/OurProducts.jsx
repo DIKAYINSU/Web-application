@@ -8,7 +8,13 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import '../Styles/Card.css'; // custom CSS wrote by AMOL 
 
-// images 
+// 
+import productImage_1 from '../assets/Products/slot-psd.webp'
+import productImage_2 from '../assets/Products/oil-vapour-web.webp'
+import productImage_3 from '../assets/Products/rings-web.webp'
+import productImage_4 from '../assets/Products/air-buffle-web-1.webp'
+import productImage_5 from '../assets/Products/air-buffle-web.webp'
+
 
 // import productImage1 from '../assets/Images/slotimage.jpg'
 
@@ -107,7 +113,7 @@ function OurProducts() {
             <Swiper
               effect="cards"
               autoplay={true}
-              
+
               grabCursor={true}
               modules={[EffectCards]}
               className="mySwiperOne"
@@ -121,14 +127,14 @@ function OurProducts() {
               <SwiperSlide><img className='object-cover' src={productImage1} alt="img1" /></SwiperSlide>
               <SwiperSlide><img className='object-cover' src={productImage1} alt="img1" /></SwiperSlide>  */}
 
-              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover rounded-xl' src="./src/assets/Products/slot-psd.webp" alt="img2" /></SwiperSlide>
-              <SwiperSlide className=' w-full h-full' ><img className='w-full h-full object-cover rounded-xl' src="./src/assets/Products/oil-vapour-web.webp" alt="img2" /></SwiperSlide>
-              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover  rounded-xl' src="./src/assets/Products/rings-web.webp" alt="img2" /></SwiperSlide>
-              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover rounded-xl' src="./src/assets/Products/air-buffle-web-1.webp" alt="img2" /></SwiperSlide>
-              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover rounded-xl' src="./src/assets/Products/air-buffle-web.webp" alt="img2" /></SwiperSlide>
+              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover rounded-xl'  src={productImage_1} alt="img2" /></SwiperSlide>
+              <SwiperSlide className=' w-full h-full' ><img className='w-full h-full object-cover rounded-xl' src={productImage_2} alt="img2" /></SwiperSlide>
+              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover  rounded-xl' src={productImage_3} alt="img2" /></SwiperSlide>
+              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover rounded-xl'  src={productImage_4} alt="img2" /></SwiperSlide>
+              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover rounded-xl'  src={productImage_5} alt="img2" /></SwiperSlide>
 
-             
-          
+
+
 
             </Swiper>
           </div>

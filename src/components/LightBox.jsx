@@ -1,5 +1,6 @@
 import React from 'react';
 import LightGallery from 'lightgallery/react';
+import Gallary_Img_1 from   '../assets/Images/certificateOne.jpg'
 
 // Styles
 import 'lightgallery/css/lightgallery.css';
@@ -12,7 +13,8 @@ import lgZoom from 'lightgallery/plugins/zoom';
 
 // Image Array — replace these with your actual images
 const images = [
-  './src/assets/Images/certificateOne.jpg',
+  `${Gallary_Img_1}`,
+  `${Gallary_Img_1}`,
 
  
 ];

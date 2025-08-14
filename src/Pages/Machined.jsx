@@ -1,7 +1,7 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
-import FounderImage from '../assets/Images/img1.jpeg'
-import AboutBanner from '../Assets/Images/Banner5.jpg'
+import MachinedImage from '../assets/Images/img1.jpeg'
+import AboutBanner from '../assets/Images/Banner5.jpg'
 
 
 function Machined() {
@@ -62,7 +62,7 @@ function Machined() {
                     <div className=' order-1 md:order-2 w-[100%] flex justify-center items-center'>
                         <img className=' h-[90%] pt-5 p-2 md:p-6 rounded-4xl shadow-md@
                     transition-all duration-300 
-                    hover: hover:scale-105  hover:rounded-2xl" ' src={FounderImage} alt="" />
+                    hover: hover:scale-105  hover:rounded-2xl" ' src={MachinedImage} alt="" />
 
                     </div>
 

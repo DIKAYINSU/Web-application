@@ -1,4 +1,5 @@
 import React from 'react'
+import WhatwedoImaage from '../assets/Images/whatwedo.webp'
 
 function WhatWeDO() {
   return (
@@ -8,7 +9,7 @@ function WhatWeDO() {
         
 
      
-        <div className="about-container ">
+        <div className="about-container"> 
 
           <div className="about-text fade-up ">
             {/* <h1 className="text-xl sm:text-xl md:text-xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent tracking-tight leading-tight transition-all duration-500 ease-in-out hover:scale-105">
@@ -52,7 +53,7 @@ function WhatWeDO() {
 
 
           <div className="about-image fade-up">
-            <img src="./src/assets/Images/whatwedo.webp" alt="About DiKay" />
+            <img src={WhatwedoImaage} alt="About DiKay" />
 
           </div>
 

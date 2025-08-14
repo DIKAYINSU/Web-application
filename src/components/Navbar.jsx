@@ -68,7 +68,7 @@ function Navbar() {
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src={isOverParticle ? `${Logo}` : `${LogoWhite}`}
+            src={isOverParticle ? `${LogoWhite}` : `${Logo}`}
             className="h-12"
             alt="Logo"
           />

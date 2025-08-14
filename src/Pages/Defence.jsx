@@ -1,7 +1,7 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
 import FounderImage from '../assets/Images/img1.jpeg'
-import Railbanner from '../Assets/Images/DefenceBanner.jpg'
+import DefenceBanner from '../Assets/Images/DefenceBanner.jpg'
 import DefenceImage from '../Assets/Images/DefenceImage.jpg'
 
 function Defence() {
@@ -12,7 +12,7 @@ function Defence() {
       <div
                className="relative w-full h-[70vh] md:h-[90vh] bg-cover bg-center bg-no-repeat"
                  style={{
-                   backgroundImage: `url(${Railbanner   })`
+                   backgroundImage: `url(${DefenceBanner})`
                  }}
               
              >

@@ -4,10 +4,13 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import '../Styles/CarouselCss.css';
 import { Link, NavLink } from 'react-router-dom';
+import HeroImage_1 from '../assets/Images/wind.webp'
+import HeroImage_2 from '../assets/Images/railwaysImage.webp'
+import HeroImage_3 from '../assets/Images/air.webp'
 
 const slides = [
   {
-    image: './src/assets/Images/wind.webp',
+    image: `${HeroImage_1}`,
     heading: 'Future-Ready. Field-Tested.',
     subheading: ' FRP Components Built for Wind Industry Demands',
     buttonText: 'Explore Products',
@@ -15,14 +18,14 @@ const slides = [
   },
 
   {
-    image: './src/assets/Images/railwaysImage.webp',
+    image: `${HeroImage_2}`,
     heading: 'Durability That Moves Railways',
     subheading: 'Precision FRP Parts for Smooth Railway Operations',
     buttonText: 'Explore Products',
     Link:'/Railways'
   },
   {
-    image: './src/assets/Images/air.webp',
+   image: `${HeroImage_3}`,
     heading: 'Material Matters in Defence',
     subheading: 'Engineered FRP Solutions for Strategic Military Applications',
     buttonText: 'Explore Products',

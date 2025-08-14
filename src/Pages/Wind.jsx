@@ -1,7 +1,7 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
-import FounderImage from '../assets/Images/img1.jpeg'
-import AboutBanner from '../Assets/Images/windBanner.jpg'
+import WindImage from '../assets/Images/img1.jpeg'
+import WindBanner from '../assets/Images/windBanner.jpg'
 
 function Wind() {
   return (
@@ -11,7 +11,7 @@ function Wind() {
     <div
           className="relative w-full h-[70vh] md:h-[90vh] bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url(${AboutBanner})`
+              backgroundImage: `url(${WindBanner})`
             }}
          
         >
@@ -54,7 +54,7 @@ function Wind() {
                     <div className=' order-1 md:order-2 w-[100%] flex justify-center items-center'>
                         <img className=' h-[90%] pt-5 p-2 md:p-6 rounded-4xl shadow-md@
                     transition-all duration-300 
-                    hover: hover:scale-105  hover:rounded-2xl" ' src={FounderImage} alt="" />
+                    hover: hover:scale-105  hover:rounded-2xl" ' src={WindImage} alt="" />
 
                     </div>
 

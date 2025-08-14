@@ -4,17 +4,32 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 
+// client Images
+import Hitachi from '../assets/Client/hitachi.png'
+import LNT from '../assets/Client/LNT.png'
+import NPTC from '../assets/Client/ntpc.png'
+import Railways from '../assets/Client/railways.png'
+import Bofors from '../assets/Client/boforslogo.png'
+import Alstom from '../assets/Client/alstom.png'
+import BHEL from '../assets/Client/bhel.png'
+import Suzlon from '../assets/Client/suzlon.png'
+import TDPS from '../assets/Client/tdps.png'
+import Voith from '../assets/Client/voith.png'
+
+
+
+
 const clients = [
-  { id: 1, src: "./src/assets/Client/hitachi.png", alt: "Client 1" },
-  { id: 2, src: "./src/assets/Client/LNT.png", alt: "Client 2" },
-  { id: 3, src: "./src/assets/Client/ntpc.png", alt: "Client 3" },
-  { id: 4, src: "./src/assets/Client/railways.png", alt: "Client 4" },
-  { id: 5, src: "./src/assets/Client/boforslogo.png", alt: "Client 5" },
-  { id: 6, src: "./src/assets/Client/alstom.png", alt: "Client 6" },
-  { id: 7, src: "./src/assets/Client/bhel.png", alt: "Client 7" },
-  { id: 8, src: "./src/assets/Client/suzlon.png", alt: "Client 8" },
-  { id: 9, src: "./src/assets/Client/tdps.png", alt: "Client 9" },
-  { id: 10, src: "./src/assets/Client/voith.png", alt: "Client 10" },
+  { id: 1, src: `${Hitachi}`, alt: "Hitachi" },
+  { id: 2, src: `${LNT}`, alt: "Client 2" },
+  { id: 3, src: `${NPTC}`, alt: "Client 3" },
+  { id: 4, src: `${Railways}`, alt: "Client 4" },
+  { id: 5, src: `${Bofors}`, alt: "Client 5" },
+  { id: 6, src: `${Alstom}`, alt: "Client 6" },
+  { id: 7, src: `${BHEL}`, alt: "Client 7" },
+  { id: 8, src: `${Suzlon}`, alt: "Client 8" },
+  { id: 9, src: `${TDPS}`, alt: "Client 9" },
+  { id: 10, src: `${Voith}`, alt: "Client 10" },
 ];
 
 const ClientSlider = () => {
@@ -33,7 +48,7 @@ const ClientSlider = () => {
             spaceBetween={30}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             breakpoints={{
-              320: { slidesPerView: 2  },
+              320: { slidesPerView: 2 },
               480: { slidesPerView: 3 },
               640: { slidesPerView: 4 },
               768: { slidesPerView: 5 },
