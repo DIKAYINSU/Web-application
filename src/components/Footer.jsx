@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import FooterLogo from '../assets/WeblogoWhite.png'
+import Catelouge from '../assets/Images/DIKay_Insulation_Catelouge_V2.pdf'
 
 function Footer() {
   const location = useLocation();
@@ -91,7 +92,7 @@ function Footer() {
               <ul className="space-y-2">
                 <li><Link to="/Machined" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Machined Products</Link></li>
                 <li><Link to="/Molded" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Molded Products</Link></li>
-                <li><a className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out" href="./src/assets/Images/DIKay Insulation Catelouge V2.pdf" Download="DiKay_Catelouge" >Download Brochure</a></li>
+                <li><a className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out" href={Catelouge} Download="DiKay_Catelouge" >Download Brochure</a></li>
                 {/* <li><Link to="Defence" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Defence</Link></li>
               <li><Link to="#" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Custom Solutions</Link></li> */}
               </ul>
