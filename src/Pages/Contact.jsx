@@ -1,7 +1,7 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
 import EnquireForm from '../components/EnquireForm'
-import ContactBanner from '../assets/Images/Banner3.jpg'
+import ContactBanner from '../assets/Images/banner3.jpg'
 
 
 function Contact() {
