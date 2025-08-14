@@ -1,8 +1,8 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
 import FounderImage from '../assets/Images/img1.jpeg'
-import DefenceBanner from '../Assets/Images/DefenceBanner.jpg'
-import DefenceImage from '../Assets/Images/DefenceImage.jpg'
+import DefenceBanner from '../assets/Images/DefenceBanner.jpg'
+import DefenceImage from '../assets/Images/DefenceImage.jpg'
 
 function Defence() {
     return (
