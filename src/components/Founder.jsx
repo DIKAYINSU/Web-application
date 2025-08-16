@@ -1,5 +1,5 @@
 import React from 'react'
-import FounderImage from '../assets/Images/img1.jpeg'
+import FounderImage from '../assets/Images/officeImage.webp'
 // import Typewriter from 'typewriter-effect';
 
 function Founder() {

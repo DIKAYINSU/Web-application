@@ -8,30 +8,30 @@ function Machined() {
     return (
         <>
             {/* <PageBanner Heading="Machined Components" SubHeading="This is Sub-Heading " /> */}
-             
-    <div
-      className="relative w-full h-[70vh] md:h-[90vh] bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${MachinedBanner})`
-        }}
-     
-    >
-      <div className="absolute inset-0 bg-red bg-opacity-50"></div>
-    
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 md:px-20">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-        Machined Components
-        </h1>
-        <p className="text-white text-base sm:text-lg md:text-xl max-w-2xl">
-         Delivering Reliable FRP & Insulation Solutions for India’s Core Industries.
-        </p>
-        
-      </div>
-    </div>
-    
+
+            <div
+                className="relative w-full h-[70vh] md:h-[90vh] bg-cover bg-center bg-no-repeat"
+                style={{
+                    backgroundImage: `url(${MachinedBanner})`
+                }}
+
+            >
+                <div className="absolute inset-0 bg-red bg-opacity-50"></div>
+
+                <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 md:px-20">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+                        Machined Components
+                    </h1>
+                    <p className="text-white text-base sm:text-lg md:text-xl max-w-2xl">
+                        Delivering Reliable FRP & Insulation Solutions for India’s Core Industries.
+                    </p>
+
+                </div>
+            </div>
+
 
             <div className='md:h-[80vh'>
-        
+
                 <div className='grid grid-cols-1 pl-2 pr-2 md:grid-cols-2 md:pl-10 md:pr-10 ] '>
 
                     <div className='p-7 md:p-2 order-2 md:order-1'>
@@ -39,11 +39,10 @@ function Machined() {
 
                         <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
                             <p className='font-Roboto text-lg pt-7'>
-                                With Many Decades of experience, we
-                                specialize in precision-engineered components used in electrical
-                                Machinery, Wind turbines, Hydro Generators, and Industrial Infrastructure. Our products are designed to
-                                perform in demanding environments—ensuring long-term efficiency, safety, and reliability across critical
-                                sectors.
+                                We manufacture high-quality machined components that are strong, precise, and reliable.
+                                Made from FRP and epoxy composites, our products ensure durability and long service life.
+                                They are lightweight, corrosion-resistant, and suitable for challenging environments.
+                                Each component is crafted with precision to meet industry standards.
                             </p>
                         </div>
                         <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">
