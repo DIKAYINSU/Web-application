@@ -1,6 +1,22 @@
 import React from 'react';
 import LightGallery from 'lightgallery/react';
-import Gallary_Img_1 from   '../assets/Images/certificateOne.jpg'
+import Gallary_Img_1 from   '../assets/PGallery/product-1.jpg'
+import Gallary_Img_2 from   '../assets/PGallery/product-2.jpg'
+import Gallary_Img_3 from   '../assets/PGallery/product-3.jpg'
+import Gallary_Img_4 from   '../assets/PGallery/product-4.jpg'
+import Gallary_Img_5 from   '../assets/PGallery/product-5.jpg'
+import Gallary_Img_6 from   '../assets/PGallery/product-6.jpg'
+import Gallary_Img_7 from   '../assets/PGallery/product-7.jpg'
+import Gallary_Img_8 from   '../assets/PGallery/product-8.jpg'
+import Gallary_Img_9 from   '../assets/PGallery/product-9.jpg'
+import Gallary_Img_10 from  '../assets/PGallery/product-10.jpg'
+import Gallary_Img_11 from  '../assets/PGallery/product-11.jpg'
+import Gallary_Img_12 from  '../assets/PGallery/product-12.jpg'
+import Gallary_Img_13 from  '../assets/PGallery/product-13.jpg'
+import Gallary_Img_14 from  '../assets/PGallery/product-14.jpg'
+import Gallary_Img_15 from  '../assets/PGallery/product-15.jpg'   
+import Gallary_Img_16 from  '../assets/PGallery/product-16.jpg'   
+import Gallary_Img_17 from  '../assets/PGallery/product-17.jpg'   
 
 // Styles
 import 'lightgallery/css/lightgallery.css';
@@ -13,8 +29,23 @@ import lgZoom from 'lightgallery/plugins/zoom';
 
 // Image Array — replace these with your actual images
 const images = [
+  `${Gallary_Img_2}`,
+  `${Gallary_Img_3}`,
+  `${Gallary_Img_4}`,
+  `${Gallary_Img_5}`,
+  `${Gallary_Img_6}`,
+  `${Gallary_Img_7}`,
+  `${Gallary_Img_8}`,
+  `${Gallary_Img_9}`,
+  `${Gallary_Img_11}`, 
+  `${Gallary_Img_10}`,
+  `${Gallary_Img_12}`,
+  `${Gallary_Img_13}`,
+  `${Gallary_Img_14}`,
+  `${Gallary_Img_15}`,
+  `${Gallary_Img_16}`,
   `${Gallary_Img_1}`,
-  `${Gallary_Img_1}`,
+  `${Gallary_Img_17}`,
 
  
 ];

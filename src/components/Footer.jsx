@@ -92,7 +92,7 @@ function Footer() {
               <ul className="space-y-2">
                 <li><Link to="/Machined" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Machined Products</Link></li>
                 <li><Link to="/Molded" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Molded Products</Link></li>
-                <li><a className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out" href={Catelouge} Download="DiKay_Catelouge" >Download Brochure</a></li>
+                <li><a className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out" href={Catelouge} download="DiKay_Catelouge" >Download Brochure</a></li>
                 {/* <li><Link to="Defence" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Defence</Link></li>
               <li><Link to="#" className="text-gray-400 hover:text-[#00a6f4] transition-transform transform hover:scale-105 duration-300 ease-in-out">Custom Solutions</Link></li> */}
               </ul>
