@@ -1,7 +1,7 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
-import MachinedImage from '../assets/Images/img1.jpeg'
-import AboutBanner from '../assets/Images/Banner5.jpg'
+import MachinedImage from '../assets/Images/MachinedImage.jpg'
+import MachinedBanner from '../assets/Images/Banner5.jpg'
 
 
 function Machined() {
@@ -12,7 +12,7 @@ function Machined() {
     <div
       className="relative w-full h-[70vh] md:h-[90vh] bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${AboutBanner})`
+          backgroundImage: `url(${MachinedBanner})`
         }}
      
     >
