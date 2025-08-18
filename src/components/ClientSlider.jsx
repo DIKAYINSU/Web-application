@@ -64,7 +64,7 @@ const ClientSlider = () => {
                 <img
                   src={client.src}
                   alt={client.alt}
-                  className="h-32 md:h-32 object-contain"
+                  className="h-32 md:h-32 object-contain hover: transition-transform transform hover:scale-140 duration-300 ease-in-out"
                 />
               </SwiperSlide>
             ))}

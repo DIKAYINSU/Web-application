@@ -1,5 +1,5 @@
 import React from 'react'
-import WhatwedoImaage from '../assets/Images/whatwedo.webp'
+import WhatwedoImaage from '../assets/Images/Molding_image.jpg'
 
 function WhatWeDO() {
   return (

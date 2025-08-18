@@ -28,7 +28,7 @@ function Rings() {
         <div className="grid grid-cols-1 pl-2 pr-2 md:grid-cols-2 md:pl-10 md:pr-10 ] ">
           <div className="p-7 md:p-2 order-2 md:order-1">
             <h1 className="text-left font-bold text-3xl md:text-center pt-5 font-Roboto">
-              FRP Rings & Cylinders
+              FRP Rings
             </h1>
 
             <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-103 hover:text-black">

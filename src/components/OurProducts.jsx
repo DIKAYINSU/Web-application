@@ -3,13 +3,13 @@ import React, { useEffect, useRef } from 'react';
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards } from 'swiper/modules';
+import { Autoplay, EffectCards } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import '../Styles/Card.css'; // custom CSS wrote by AMOL 
 
 // 
-import productImage_1 from '../assets/Products/slot-psd.webp'
+import productImage_1 from '../assets/Products/slot-psd.jpg'
 import productImage_2 from '../assets/Products/oil-vapour-web.webp'
 import productImage_3 from '../assets/Products/rings-web.webp'
 import productImage_4 from '../assets/Products/air-buffle-web-1.webp'
@@ -83,64 +83,57 @@ function OurProducts() {
   return (
 
     <>
-      <div className="grid sm:grid-cols-2 bg-gray-50 z-10">
-        <div ref={cursorRef} className="cursur z-5">
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 bg-gray-50 z-10">
+  <div ref={cursorRef} className="cursur z-5">
+  </div>
 
-        <div ref={containerRef} className="relative ">
+  <div ref={containerRef} className="relative"> 
+    <div className='pt-15 m-5'>
+      <h1 className="text-4xl font-bold text-center pt-5">Our Products</h1>
 
+      <h3 className="text-lg text-left font-bold pl-10 pt-8 font-Roboto">
+        Reliable FRP Product Manufacturers for Electrical, Railways, Renewable Energy and More
+      </h3>
 
-          <div className='pt-15 m-5'>
-            <h1 className="text-4xl font-bold align text-center pt-5">Our Products</h1>
-            {/* <div className='text-center "'>
-      <span className="text-3xl text-center font-Roboto font-extrabold bg-gradient-to-r from-[#00a6f4] via-blue-500 to-blue-600 bg-clip-text text-transparent">
- Our Products
-</span>
-    </div> */}
+      <p className="font-Roboto text-lg text-left pl-10 pt-5 font-medium">
+        At <span className='font-semibold'>Di Kay Insulation Industries Pvt.</span> Ltd., We Specialize In Manufacturing High-Quality, Custom-Designed <span className='font-semibold'>FRP (Fibre Reinforced Plastic)</span> Products That Cater To A Wide Range Of Industries Including <span className='font-semibold'>Electrical, Railways, Renewable Energy,</span> And <span className='font-semibold'>Defence</span>. Our Product Range Includes <span className='font-semibold'>FRP Sheets, Motor Covers, Insulation Blocks, Air Guide Shields, Epoxy Cylinders, Glass Epoxy Tubes, </span>And More — All Tailored To Meet Exact Client Specifications. With <span className='font-semibold'>In-House R&D</span> And <span className='font-semibold'>Testing Capabilities,</span> We Ensure <span className='font-semibold'>Precision, Durability,</span> And <span className='font-semibold'>Performance</span> In Every Product We Deliver.
+      </p>
+    </div>
+  </div>
 
-            <h3 className="text-lg text-left font-bold pl-10 pt-8 font-Roboto">Reliable FRP Product Manufacturers for Electrical,
-              Railways,Renewable Energy and More</h3>
-            <p className="font-Roboto text-lg text-left pl-10 pt-5 font-medium ">At Di Kay Insulation Industries Pvt. Ltd., we specialize in manufacturing
-              high-quality, custom-designed FRP (Fibre Reinforced Plastic) products that cater to a wide range of industries
-              including Electrical, Railways, Renewable Energy, and Defence. Our product range includes FRP sheets, motor
-              covers, insulation blocks, air guide shields, epoxy cylinders, glass epoxy tubes, and more — all tailored to
-              meet exact client specifications. With in-house R&D and testing capabilities, we ensure precision, durability,
-              and performance in every product we deliver</p>
-          </div>
-        </div>
-        <div>
-          <div className="swiper-box ">
-            <Swiper
-              effect="cards"
-              autoplay={true}
-
-              grabCursor={true}
-              modules={[EffectCards]}
-              className="mySwiperOne"
-            >
-              {/* <SwiperSlide><img className='object-cover' src={productImage1} alt="img1" /></SwiperSlide>
-              <SwiperSlide><img className='object-cover' src={productImage1} alt="img1" /></SwiperSlide>
-             <SwiperSlide><img className='object-cover' src={productImage1} alt="img1" /></SwiperSlide>
-              <SwiperSlide><img className='object-cover' src={productImage1} alt="img1" /></SwiperSlide>
-              <SwiperSlide><img className='object-cover' src={productImage1} alt="img1" /></SwiperSlide> 
-                 <SwiperSlide><img className='object-cover' src={productImage1} alt="img1" /></SwiperSlide>
-              <SwiperSlide><img className='object-cover' src={productImage1} alt="img1" /></SwiperSlide>
-              <SwiperSlide><img className='object-cover' src={productImage1} alt="img1" /></SwiperSlide>  */}
-
-              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover rounded-xl'  src={productImage_1} alt="img2" /></SwiperSlide>
-              <SwiperSlide className=' w-full h-full' ><img className='w-full h-full object-cover rounded-xl' src={productImage_2} alt="img2" /></SwiperSlide>
-              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover  rounded-xl' src={productImage_3} alt="img2" /></SwiperSlide>
-              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover rounded-xl'  src={productImage_4} alt="img2" /></SwiperSlide>
-              <SwiperSlide className='w-full h-full' ><img className='w-full h-full object-cover rounded-xl'  src={productImage_5} alt="img2" /></SwiperSlide>
+  <div>
+    <div className="swiper-box">
+      <Swiper
+        effect="cards"
+        autoplay={{
+        delay:3500,
+         disableOnInteraction: false,
 
 
-
-
-            </Swiper>
-          </div>
-
-        </div>
-      </div>
+        }}
+        grabCursor={true}
+        modules={[EffectCards,Autoplay]}
+        className="mySwiperOne"
+      >
+        <SwiperSlide className='w-full h-full'>
+          <img className='w-full h-full object-cover rounded-xl' src={productImage_1} alt="img1" />
+        </SwiperSlide>
+        <SwiperSlide className='w-full h-full'>
+          <img className='w-full h-full object-cover rounded-xl' src={productImage_2} alt="img2" />
+        </SwiperSlide>
+        <SwiperSlide className='w-full h-full'>
+          <img className='w-full h-full object-cover rounded-xl' src={productImage_3} alt="img3" />
+        </SwiperSlide>
+        <SwiperSlide className='w-full h-full'>
+          <img className='w-full h-full object-cover rounded-xl' src={productImage_4} alt="img4" />
+        </SwiperSlide>
+        <SwiperSlide className='w-full h-full'>
+          <img className='w-full h-full object-cover rounded-xl' src={productImage_5} alt="img5" />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  </div>
+</div>
 
     </>
   )

@@ -36,9 +36,7 @@ function Categories() {
           <h1 className="font-bold pt-5">Precision-Machined FRP Components</h1>
           <div
             className="space-y-6 pt-5 text-base leading-7 text-black-900 transition-all duration-300 group-hover:text-white/90">
-            <p>We produce high-precision FRP components with excellent dimensional accuracy and surface finish—ideal for
-              electrical and mechanical applications.
-              Our offerings include CNC-machined rings, wedges, guides, spacers, and insulation blocks.</p>
+              <p>We Manufacture Premium FRP Sheets (GP03, EPGC, G-10, G-11) And Produce High-Precision Components Such As CNC-Machined Rings, Wedges, Guides, Spacers, And Insulation Blocks With Excellent Dimensional Accuracy And Surface Finish—Ideal For Electrical And Mechanical Applications.</p>
           </div>
           <div className="pt-5 text-base font-semibold leading-7">
             <p><a href="#" className="text-sky-500 transition-all duration-300 group-hover:text-white">Read More →</a></p>
@@ -66,8 +64,7 @@ function Categories() {
 
           <div
             className="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-            <p>We produce durable FRP components through compression and hot molding, ensuring consistent strength and
-              quality. Ideal for large-scale production of core clamps, phase barriers, and motor or turbine parts.</p>
+            <p>We Produce Durable FRP Components Using Compression And Hot Molding, Delivering Consistent Strength And Quality—Ideal For Large-Scale Production Of Core Clamps, Phase Barriers, And Motor Or Turbine Parts.</p>
           </div>
           <div className="pt-5 text-base font-semibold leading-7">
             <p><a href="#" className="text-sky-500 transition-all duration-300 group-hover:text-white">Read More →</a>
@@ -97,8 +94,7 @@ function Categories() {
 
           <div
             className="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-            <p>We specialize in customized FRP manufacturing, backed by in-house R&D and testing labs—serving sectors
-              like Electrical, Renewable Energy, Defence, Railways, and more
+            <p>We Specialize In Customized FRP Manufacturing, Backed By In-House R&D And Testing Labs—Serving Sectors Like Electrical, Renewable Energy, Defence, Railways, And More.
             </p>
           </div>
           <div className="pt-5 text-base font-semibold leading-7">
