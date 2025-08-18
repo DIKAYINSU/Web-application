@@ -24,6 +24,7 @@ import Railways from './Pages/Railways';
 import Defence from './Pages/Defence';
 import Wind from './Pages/Wind';
 import Hydro from './Pages/Hydro';
+import Rings from './Pages/Rings';
 
 
 
@@ -47,7 +48,7 @@ function App() {
           element:<Gallery/>
         },
           {
-          path: "/Contact",
+          path: "/Contact",  
           element: <Contact/>
         },
         {
@@ -75,6 +76,10 @@ function App() {
           path: "/Hydro",
           element: <Hydro/>
         },
+        {
+          path:"/Rings",
+          element:<Rings/>
+        }
        
          
       ]

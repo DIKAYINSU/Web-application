@@ -1,5 +1,14 @@
 /* Horizontal Scroller CSS */
 
+@font-face {
+  font-family: 'Nulshock_Bd';
+  src: url('/Fonts/Quicksilver.woff2') format('woff2');
+  /* font-weight: normal; */
+  font-style: normal;
+}
+
+
+
 .racesWrapper {
   height: 100vh;
   overflow: hidden;
@@ -23,14 +32,14 @@
 }
 
 .races h2 {
-  font-size: 23vw;
+  font-size: 24vw;
   flex-shrink: 0;
   padding: 0 0.3em;
   color: black;
   white-space: nowrap;
   line-height: 1; 
-  font-family: Azonix;
-  /* text-transform: uppercase; */
+  font-family: 'Nulshock_Bd',sans-serif;
+  text-transform: uppercase;
   
 }
 .races h2 span {
@@ -65,7 +74,7 @@
   }
     .races {
     padding: 0 4vw;
-     font-family: Azonix!important;
+     /* font-family: Azonix!important; */
     
   }
   .races h2 {

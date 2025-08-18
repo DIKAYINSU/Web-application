@@ -161,6 +161,15 @@ function Navbar() {
                         Molding Components
                       </NavLink>
                     </li>
+
+                     <li>
+                      <NavLink
+                        to="/Rings"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        FRP Rings & Cylinders
+                      </NavLink>
+                    </li>
                     {/* <li>
                       <NavLink
                         to="/Railways"

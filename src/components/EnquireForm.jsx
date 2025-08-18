@@ -99,7 +99,7 @@ function EnquireForm() {
                     <div className="w-full flex flex-col justify-center items-center h-full px-5 py-10 bg-red-300W">
                         {/* Section Heading */}
                         <div className='pb-10'>
-                            <span className="text-2xl font-Roboto font-extrabold bg-gradient-to-r from-[#00a6f4] via-blue-500 to-blue-600 bg-clip-text text-transparent">
+                            <span className="text-3xl font-Roboto font-extrabold bg-gradient-to-r from-[#00a6f4] via-blue-500 to-blue-600 bg-clip-text text-transparent">
                                 Quick Contact
                             </span>
                         </div>
@@ -113,7 +113,7 @@ function EnquireForm() {
                                     <i className="fa fa-envelope fa-xl" aria-hidden="true"></i>
                                 </div>
                                 <h2 className="text-2xl font-bold pt-2 text-[#00a6f4]">Email</h2>
-                                <p className="text-sm text-gray-600 pt-2 text-center mt-1">dkinsu2010@gmail.com</p>
+                                <p className="text-lg text-gray-600 pt-2 text-center mt-1">dkinsu2010@gmail.com</p>
                             </div>
 
                             {/* Contact Card */}
@@ -123,7 +123,7 @@ function EnquireForm() {
 
                                 </div>
                                 <h2 className="text-2xl font-bold pt-2 text-[#00a6f4]">Phone</h2>
-                                <p className="text-sm text-gray-600 text-center mt-1 pt-2">+91 6266161724 , +0755 123456 </p>
+                                <p className="text-lg text-gray-600 text-center mt-1 pt-2">+91 6266161724 ,<br/> +0755 2586088,4282018 </p>
                                 {/* <p className="text-sm text-gray-600 text-center mt-1">+0755 123456</p> */}
                             </div>
 
@@ -133,8 +133,8 @@ function EnquireForm() {
                                     <i class="fa fa-location-dot fa-xl"></i>
                                 </div>
                                 <h2 className="text-2xl font-bold text-[#00a6f4]">Location</h2>
-                                <p className="text-sm text-gray-600 text-center mt-1 p-2">9-E Industrial Area Govindpura</p>
-                                <p className="text-sm text-gray-600 text-center">Bhopal-462023 INDIA </p>
+                                <p className="text-lg text-gray-600 text-center mt-1 p-2 ">9-E Industrial Area Govindpura Bhopal-462023 Madhya Pradesh INDIA</p>
+                                {/* <p className="text-lg text-gray-600 text-center"> </p> */}
                             </div>
 
                             {/* Business Hours Card */}
@@ -143,7 +143,7 @@ function EnquireForm() {
                                     <i class="fa-solid fa-clock fa-xl"></i>
                                 </div>
                                 <h2 className="text-2xl font-bold text-[#00a6f4] pt-2">Business Hours</h2>
-                                <p className="text-sm text-gray-600 text-center mt-1 pt-4">Mon – Sat: 8:30 AM – 5:00 PM</p>
+                                <p className="text-lg text-gray-600 text-center mt-1 pt-4">Mon – Sat: 8:30 AM – 5:00 PM</p>
                             </div>
                         </div>
                     </div>
