@@ -47,7 +47,7 @@ function Certification() {
 
 
         {/* <!-- Card 3 --> */}
-        <div
+        {/* <div
           className="group w-[18rem] sm:w-[21.5rem] bg-white dark:bg-[#262525] rounded-2xlx overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
           <img className="w-full h-[20rem] object-cover"
                src="./Assets/Images/certificateone.jpg"
@@ -58,7 +58,7 @@ function Certification() {
             <p className="text-gray-700 dark:text-gray-300 mb-4 ">S</p>
             
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>

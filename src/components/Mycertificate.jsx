@@ -50,10 +50,10 @@ function MyCertificate() {
             </div>
 
             {/* Card 3 */}
-           <div className="group w-[18rem] sm:w-[21.5rem] bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+           {/* <div className="group w-[18rem] sm:w-[21.5rem] bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
               <img
                 className="w-full h-auto max-h-[30rem] object-cover"
-                src={certificate1}
+                src={FMPCCI}
                 alt="Certificate 1"
               />
               <div className="p-5">
@@ -62,7 +62,7 @@ function MyCertificate() {
                 </h2>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">Sub Heading</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

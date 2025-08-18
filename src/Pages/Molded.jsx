@@ -1,6 +1,6 @@
 import React from "react";
 import PageBanner from "../components/PageBanner";
-import MoldedImage from "../assets/Images/img1.jpeg";
+import MoldedImage from "../assets/Images/Molding_image.jpg";
 import MoldedBanner from "../assets/Images/Banner_7.jpg";
 
 function Molded() {

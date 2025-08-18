@@ -1,11 +1,34 @@
 import React from "react";
-import PageBanner from "../components/PageBanner";
-import HydroImage from "../assets/Images/img1.jpeg";
+// import PageBanner from "../components/PageBanner";
+import HydroImage from "../assets/Images/Molding_image.jpg";
+import HydroImage2 from "../assets/PGallery/product-2.jpg";
+import HydroBanner from "../assets/Images/Banner_7.jpg";
+
 
 function Hydro() {
   return (
     <>
-      <PageBanner Heading="Hydro Generator" SubHeading="This is Sub-Heading " />
+      {/* <PageBanner Heading="Hydro Generator" SubHeading="This is Sub-Heading " /> */}
+      {/* banner start */}
+            <div
+              className="relative w-full h-[70vh] md:h-[90vh] bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: `url(${HydroBanner})`,
+              }}
+            >
+              <div className="absolute inset-0 bg-red bg-opacity-50"></div>
+      
+              <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 md:px-20">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+                 Hydro Power Components
+                </h1>
+                <p className="text-white text-base sm:text-lg md:text-xl max-w-2xl">
+                  Delivering Reliable FRP & Insulation Solutions for India’s Core
+                  Industries.
+                </p>  
+              </div>
+            </div>
+            {/* banner end */}
 
       <div className="md:h-[80vh">
         <div className="grid grid-cols-1 pl-2 pr-2 md:grid-cols-2 md:pl-10 md:pr-10 ] ">
@@ -40,16 +63,14 @@ function Hydro() {
               <p className="font-Roboto text-lg pt-4">
                 Our Hydro Power product line includes
                 <span className="font-semibold"> Air Guide Assemblies</span>{" "}
-                <span className="font-semibold">
-                  (80mm thickness and 2500 MM OD)
-                </span> 
+                 
                 , along with{" "}
-                <span className="font-semibold">Sleeves, Flanges ,Support Rings</span>, and
+                <span className="font-semibold">Sleeves, Flanges ,Support Rings (80mm thickness and 2500 MM OD) </span>, and
                 other critical components. Each product is developed using{" "}
                 <span className="font-semibold">advanced techniques </span>
                 under{" "}
                 <span className="font-semibold">strict quality control</span>,
-                ensuring durability and flawless performance. We are committed
+                ensuring durability and flawless performance. We are committed   
                 to providing{" "}
                 <span className="font-semibold">
                   efficient, long-lasting solutions
