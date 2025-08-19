@@ -10,6 +10,8 @@ import OurProducts from '../components/OurProducts'
 import ClientSlider from '../components/ClientSlider'
 import MyCertificate from '../components/Mycertificate'
 import MyCarousel from '../components/MyCarousel'
+import Hori from '../components/Hori'
+import Hori2 from '../components/Hori2'
 
 
 
@@ -23,7 +25,9 @@ function Home() {
       </div>
       {/* <Hero/> */}
       <MyCarousel />
-      <HorizontalScroll />
+      {/* <HorizontalScroll /> */}
+      {/* <Hori/> */}
+      <Hori2/>
       <AboutUs />
       <WhatWeDO />
       <OurProducts />
