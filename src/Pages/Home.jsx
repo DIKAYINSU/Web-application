@@ -16,6 +16,7 @@ import Hori2 from '../components/Hori2'
 
 
 
+
 function Home() {
   return (
     <>
@@ -28,6 +29,8 @@ function Home() {
       {/* <HorizontalScroll /> */}
       {/* <Hori/> */}
       <Hori2/>
+      {/* <Hori2/> */}
+      {/* <Hori3/> */}
       <AboutUs />
       <WhatWeDO />
       <OurProducts />
