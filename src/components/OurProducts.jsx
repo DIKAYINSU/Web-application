@@ -9,11 +9,11 @@ import 'swiper/css/effect-cards';
 import '../Styles/Card.css'; // custom CSS wrote by AMOL 
 
 // 
-import productImage_1 from '../assets/Products/slot-psd.jpg'
-import productImage_2 from '../assets/Products/oil-vapour-web.webp'
-import productImage_3 from '../assets/Products/rings-web.webp'
-import productImage_4 from '../assets/Products/air-buffle-web-1.webp'
-import productImage_5 from '../assets/Products/air-buffle-web.webp'
+import productImage_1 from '../assets/Products/Slot_PSD.jpg'
+import productImage_2 from '../assets/Products/Oil_Vapour_Seal.jpg'
+import productImage_3 from '../assets/Products/FRP_Rings.jpg'
+import productImage_4 from '../assets/Products/Air_Buffle_PSD.jpg'
+import productImage_5 from '../assets/Products/Air_Buffle_image.jpg'
 
 
 // import productImage1 from '../assets/Images/slotimage.jpg'
