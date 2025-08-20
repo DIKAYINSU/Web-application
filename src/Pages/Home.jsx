@@ -12,6 +12,9 @@ import MyCertificate from '../components/Mycertificate'
 import MyCarousel from '../components/MyCarousel'
 import Hori from '../components/Hori'
 import Hori2 from '../components/Hori2'
+import TextType from '../components/TextType'
+import Typewriter from 'typewriter-effect';
+import TypeWriterEffect from '../components/TypeWriterEffect'
 
 
 
@@ -25,7 +28,9 @@ function Home() {
         <Particles />
       </div>
       {/* <Hero/> */}
-      <MyCarousel />
+       <TypeWriterEffect/>
+
+      {/* <MyCarousel /> */}
       {/* <HorizontalScroll /> */}
       {/* <Hori/> */}
       <Hori2/>
@@ -37,6 +42,7 @@ function Home() {
       <Categories />
       <ClientSlider />
       <MyCertificate />
+      {/* <TextType text="hello"/> */}
 
 
 
