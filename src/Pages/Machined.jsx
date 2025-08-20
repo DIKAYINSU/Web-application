@@ -1,7 +1,7 @@
 import React from "react";
 import PageBanner from "../components/PageBanner";
 import MachinedImage from "../assets/Images/MachinedImage.jpg";
-import MachinedBanner from "../assets/Images/Banner5.jpg";
+import MachinedBanner from "../assets/Images/MachineBanner.jpg";
 
 function Machined() {
   return (

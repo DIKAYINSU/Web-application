@@ -56,7 +56,7 @@ function MyCarousel() {
               style={{ backgroundImage: `url(${slide.image})` }}
             >
               <div className="fade-text text-center text-white px-4">
-                <h2 className="text-4xl md:text-6xl font-extrabold drop-shadow-lg">
+                <h2 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
                   {slide.heading}
                 </h2>
                 <p className="mt-4 text-lg md:text-2xl font-medium">

@@ -83,7 +83,7 @@ function OurProducts() {
   return (
 
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 bg-gray-50 z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 bg-[url('../assets/Images/texture2L.jpg')] z-10">
   <div ref={cursorRef} className="cursur z-5">
   </div>
 

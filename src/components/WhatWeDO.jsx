@@ -31,18 +31,18 @@ function WhatWeDO() {
             <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-105 hover:text-black">
               <h2 className='text-xl pt-3 pb-3 font-bold'>Core Capabilities</h2>
               <p className='font-Roboto text-lg'>
-                We manufacture premium FRP Sheets (GP03, EPGC, G-10, G-11) and offer precision solutions in <span className='font-semibold'>CNC Winding, Molding, Machining,</span> and <span className='font-semibold'>Pressing.</span> With our <span className='font-semibold'>in-house R&D Lab,</span> we develop prototypes and custom components tailored to client needs.
+             We manufacture premium FRP Sheets (GP03, EPGC, G-10, G-11) and deliver <span className='font-semibold'>Precision-Engineered Components</span> through advanced processes like <span className='font-semibold'>CNC Filament Winding, Molding, Machining, and Compression Molding</span>. Supported by our <span className='font-semibold'>in-house R&D and Testing Lab</span>, we create prototypes and custom FRP solutions tailored to client requirements.
               </p>
             </div>
 
 
 
-            <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-105 hover:text-black">
+            {/* <div className="text-base font-medium text-gray-800 transition-all duration-300 ease-in-out hover:scale-105 hover:text-black">
               <h2 className='font-Roboto text-xl font-bold pt-3'>Key Products</h2>
               <p className='font-Roboto text-lg pt-3'>
                 Our Wide Range Of FRP And Epoxy Components Includes <span className='font-semibold'>Slot Wedges, Air Guides, Terminal Boards, Epoxy Cylinders, Rings, Insulation Blocks, FRP Tubes, Sheets, Core Clamps,</span> And <span className='font-semibold'>Barrier Boards</span>, Along With Precision Parts For <span className='font-semibold'>Large Motors And Wind Turbine Generators.</span>
               </p>
-            </div>
+            </div> */}
 
           </div>
 

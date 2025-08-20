@@ -1,6 +1,5 @@
 import React from 'react'
 import Particles from '../components/Particles'
-import Hero from '../components/Hero'
 import HorizontalScroll from '../components/HorizontalScroll'
 import WhatWeDO from '../components/WhatWeDO'
 import AboutUs from '../components/AboutUs'
@@ -28,9 +27,9 @@ function Home() {
         <Particles />
       </div>
       {/* <Hero/> */}
-       <TypeWriterEffect/>
+       {/* <TypeWriterEffect/> */}
 
-      {/* <MyCarousel /> */}
+      <MyCarousel />
       {/* <HorizontalScroll /> */}
       {/* <Hori/> */}
       <Hori2/>

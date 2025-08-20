@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import Lenis from 'lenis'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
 import HorizontalScroll from './components/HorizontalScroll'
 import AboutUs from './components/AboutUs'
 import WhatWeDO from './components/WhatWeDO'

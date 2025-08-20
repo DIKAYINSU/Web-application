@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Renderer, Camera, Geometry, Program, Mesh } from "ogl";
 import '../index.css'
+import TypeWriterEffect from "./TypeWriterEffect";
 
 const defaultColors = ["#ffffff", "#ffffff", "#ffffff"];
 
@@ -76,8 +77,8 @@ const fragment = /* glsl */ `
 `;
 
 const Particles = ({
-  particleCount = 200,
-  particleSpread = 10,
+  particleCount = 190,
+  particleSpread = 12,
   speed = 0.1,
   particleColors,
   moveParticlesOnHover = true,
@@ -222,19 +223,26 @@ const Particles = ({
   ]);
 
   return (
-    <div className={`relative w-full h-screen particles-container ${className}`}>
+    <>
+     <div className={`relative w-full h-screen particles-container ${className}`}>
       {/* Canvas will be appended here */}
       <div ref={containerRef} className="absolute inset-0 z-0" />
 
       {/* Centered Text Overlay */}
       <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
-        <h1 className="text-white text-4xl md:text-6xl font-bold text-center">
+        <TypeWriterEffect/>
+        {/* <h1 className="text-white text-4xl md:text-6xl font-bold text-center">
           Di Kay Insulation Industries Pvt. Ltd
-        </h1>
+        </h1> */}
       
       </div>
     </div>
+    </>
+   
   );
 };
 
 export default Particles;
+
+
+        // <TypeWriterEffect/>

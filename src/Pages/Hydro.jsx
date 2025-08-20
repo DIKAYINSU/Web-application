@@ -1,7 +1,7 @@
 import React from "react";
 // import PageBanner from "../components/PageBanner";
 import HydroImage from "../assets/Images/Molding_image.jpg";
-import HydroImage2 from "../assets/PGallery/product-2.jpg";
+
 import HydroBanner from "../assets/Images/Banner_7.jpg";
 
 
