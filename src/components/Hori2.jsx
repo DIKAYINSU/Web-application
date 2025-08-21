@@ -7,7 +7,7 @@ import product_1 from "../assets/Products/Slot_PSD.jpg";
 import product_2 from "../assets/Products/FRP_Rings.jpg";
 import product_3 from "../assets/Products/Oil_Vapour_Seal.jpg";
 import product_4 from "../assets/PGallery/product-14.jpg";
-import product_5 from "../assets/PGallery/product-2.jpg";
+import product_5 from "../assets/Images/Banner5.jpg";
 
 function Hori2() {
   const racesRef = useRef(null);
