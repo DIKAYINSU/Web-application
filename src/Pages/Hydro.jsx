@@ -2,7 +2,7 @@ import React from "react";
 // import PageBanner from "../components/PageBanner";
 import HydroImage from "../assets/Images/Molding_image.jpg";
 
-import HydroBanner from "../assets/Images/Banner_7.jpg";
+import HydroBanner from "../assets/Images/HydroBanner.jpg";
 
 
 function Hydro() {

@@ -1,7 +1,7 @@
 import React from "react";
 import PageBanner from "../components/PageBanner";
 import MoldedImage from "../assets/Images/Molding_image.jpg";
-import MoldedBanner from "../assets/Images/Banner_7.jpg";
+import MoldedBanner from "../assets/Images/MoldBanner.jpg";
 
 function Molded() {
   return (
@@ -18,7 +18,7 @@ function Molded() {
         <div className="absolute inset-0 bg-red bg-opacity-50"></div>
 
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 md:px-20">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4">
             Molded Components
           </h1>
           <p className="text-white text-base sm:text-lg md:text-xl max-w-2xl">
