@@ -1,6 +1,6 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
-import WindImage from '../assets/Images/img1.jpeg'
+import WindImage from '../assets/Images/WindImage.jpg'
 import WindBanner from '../assets/Images/windBanner.jpg'
 
 function Wind() {

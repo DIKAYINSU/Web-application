@@ -1,6 +1,6 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
-import RailImage from '../assets/Images/img1.jpeg'
+import RailImage from '../assets/Images/DBR.jpg'
 import Railbanner from '../assets/Images/railwaysImage.webp'
 
 function Railways() {
