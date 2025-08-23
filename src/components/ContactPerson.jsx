@@ -71,6 +71,32 @@ function ContactPerson() {
                         <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
                             <div className="relative w-full h-full transition-transform duration-700 sm:[transform-style:preserve-3d] sm:group-hover:[transform:rotateY(180deg)]">
                                 <div className="absolute w-full h-full bg-[#00a6f4] text-white flex justify-center items-center rounded-xl backface-hidden hidden sm:flex">
+                                    <h3 className="text-xl font-bold">Sr. Sales & Marketing Executive</h3>
+                                </div>
+                                <div className="absolute w-full h-full bg-white text-gray-800 flex flex-col justify-center items-center rounded-xl sm:[transform:rotateY(180deg)] backface-hidden">
+                                    <h3 className="text-xl font-semibold">Mr. Sunil Kumar Jharbade</h3>
+                                    <p className="text-sm text-gray-500">Sr. Sales & Marketing Executive</p>
+                                    <p className="text-gray-700 mt-2">📞 +91 9826430745</p>  
+                                </div>
+                            </div>
+                        </div>
+
+                          <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
+                            <div className="relative w-full h-full transition-transform duration-700 sm:[transform-style:preserve-3d] sm:group-hover:[transform:rotateY(180deg)]">
+                                <div className="absolute w-full h-full bg-[#00a6f4] text-white flex justify-center items-center rounded-xl backface-hidden hidden sm:flex">
+                                    <h3 className="text-xl font-bold">Sales Executive</h3>
+                                </div>
+                                <div className="absolute w-full h-full bg-white text-gray-800 flex flex-col justify-center items-center rounded-xl sm:[transform:rotateY(180deg)] backface-hidden">
+                                    <h3 className="text-xl font-semibold">Mr. Pushpendra Katiyar</h3>
+                                    <p className="text-sm text-gray-500">Sales Executive</p>
+                                    <p className="text-gray-700 mt-2">📞 +91 6266161724</p> 
+                                </div>
+                            </div>
+                        </div>  
+
+                          <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
+                            <div className="relative w-full h-full transition-transform duration-700 sm:[transform-style:preserve-3d] sm:group-hover:[transform:rotateY(180deg)]">
+                                <div className="absolute w-full h-full bg-[#00a6f4] text-white flex justify-center items-center rounded-xl backface-hidden hidden sm:flex">
                                     <h3 className="text-xl font-bold">Marketing Executive</h3>
                                 </div>
                                 <div className="absolute w-full h-full bg-white text-gray-800 flex flex-col justify-center items-center rounded-xl sm:[transform:rotateY(180deg)] backface-hidden">
@@ -80,6 +106,20 @@ function ContactPerson() {
                                 </div>
                             </div>
                         </div>
+                         {/* <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
+                            <div className="relative w-full h-full transition-transform duration-700 sm:[transform-style:preserve-3d] sm:group-hover:[transform:rotateY(180deg)]">
+                                <div className="absolute w-full h-full bg-[#00a6f4] text-white flex justify-center items-center rounded-xl backface-hidden hidden sm:flex">
+                                    <h3 className="text-xl font-bold">Marketing Executive</h3>
+                                </div>
+                                <div className="absolute w-full h-full bg-white text-gray-800 flex flex-col justify-center items-center rounded-xl sm:[transform:rotateY(180deg)] backface-hidden">
+                                    <h3 className="text-xl font-semibold">Mr. Amol Lokhande</h3>
+                                    <p className="text-sm text-gray-500">Marketing Executive</p>
+                                    <p className="text-gray-700 mt-2">📞 +91 9516338651</p> 
+                                </div>
+                            </div>
+                        </div> */}
+
+                        
 
                     </div>
                 </div>

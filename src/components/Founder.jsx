@@ -132,32 +132,14 @@ function Founder() {
                 </div>
             </div>
 
-            {/* Abour Company more details  */}
 
-            {/* typewrite effect start */}
 
-            {/* <Typewriter options={{
-                loop:true,
-                autoStart: true,
-            }}
-  onInit={(typewriter) => {
-    typewriter.typeString('Amol Lokhande',)
-      .callFunction(() => {
-        
-      }).deleteAll()
+{/* new About page */}
 
-      typewriter.typeString('Yash Lokhande',)
-      .callFunction(() => {
-        console.log('String typed out!');
-      }).deleteAll()
-      .pauseFor(2000)
-     
-      .callFunction(() => {
-        console.log('All strings were deleted');
-      })   
-      .start();
-  }}
-/> */}
+
+
+
+
 
         </>
     )
