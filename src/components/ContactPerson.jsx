@@ -68,7 +68,7 @@ function ContactPerson() {
                         </div>
 
                         {/* Additional Team Member */}
-                        <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
+                        {/* <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
                             <div className="relative w-full h-full transition-transform duration-700 sm:[transform-style:preserve-3d] sm:group-hover:[transform:rotateY(180deg)]">
                                 <div className="absolute w-full h-full bg-[#00a6f4] text-white flex justify-center items-center rounded-xl backface-hidden hidden sm:flex">
                                     <h3 className="text-xl font-bold">Sr. Sales & Marketing Executive</h3>
@@ -79,9 +79,9 @@ function ContactPerson() {
                                     <p className="text-gray-700 mt-2">📞 +91 9826430745</p>  
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
-                          <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
+                          {/* <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
                             <div className="relative w-full h-full transition-transform duration-700 sm:[transform-style:preserve-3d] sm:group-hover:[transform:rotateY(180deg)]">
                                 <div className="absolute w-full h-full bg-[#00a6f4] text-white flex justify-center items-center rounded-xl backface-hidden hidden sm:flex">
                                     <h3 className="text-xl font-bold">Sales Executive</h3>
@@ -92,9 +92,9 @@ function ContactPerson() {
                                     <p className="text-gray-700 mt-2">📞 +91 6266161724</p> 
                                 </div>
                             </div>
-                        </div>  
+                        </div>   */}
 
-                          <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
+                          {/* <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
                             <div className="relative w-full h-full transition-transform duration-700 sm:[transform-style:preserve-3d] sm:group-hover:[transform:rotateY(180deg)]">
                                 <div className="absolute w-full h-full bg-[#00a6f4] text-white flex justify-center items-center rounded-xl backface-hidden hidden sm:flex">
                                     <h3 className="text-xl font-bold">Marketing Executive</h3>
@@ -105,7 +105,7 @@ function ContactPerson() {
                                     <p className="text-gray-700 mt-2">📞 +91 9516338651</p> 
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                          {/* <div className="group [perspective:1000px] h-50 overflow-hidden rounded-xl shadow-md">
                             <div className="relative w-full h-full transition-transform duration-700 sm:[transform-style:preserve-3d] sm:group-hover:[transform:rotateY(180deg)]">
                                 <div className="absolute w-full h-full bg-[#00a6f4] text-white flex justify-center items-center rounded-xl backface-hidden hidden sm:flex">
