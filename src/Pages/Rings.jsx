@@ -1,5 +1,5 @@
 import React from 'react'
-import RingsImage from '../assets/Images/FRP_Rings.jpg'
+import RingsImage from '../assets/Images/FrpRings.jpg'
 import RingsBanner from '../assets/Images/Rings_Banner.jpg'
 import RingsImage2 from "../assets/PGallery/product-2.jpg";
 
