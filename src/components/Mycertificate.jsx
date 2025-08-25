@@ -5,6 +5,7 @@ import ISO from '../assets/Images/iso.jpg'
 import HL3 from '../assets/Images/HL3.jpg'
 import FMPCCI from '../assets/Images/FMPCCI.jpg'
 import Health_Sefety from '../assets/Images/Health_Sefety.jpg'
+import LaghuUdyog from '../assets/Images/LaghuUdyog.jpg'
 
 function MyCertificate() {
   return (
@@ -88,6 +89,22 @@ function MyCertificate() {
                 // className="w-full h-auto@ max-h-[18rem] object-cover"
                 className="max-h-full max-w-full object-contain"
                 src={Health_Sefety}
+                alt="Certificate 1"
+              />
+              <div className="p-5">
+                <h2 className="text-2xl font-semibold mb-1 group-hover:text-[#00a6f4] dark:text-white">
+                 FMCCI Award for Health & Safety
+                </h2>
+                <p className="text-gray-700 dark:text-gray-300 mb-4"> Recipient of FMCCI Award by the Hon’ble Chief Minister of Madhya Pradesh</p>
+              </div>
+            </div>
+
+
+             <div className="group w-[22rem] sm:w-[26rem] bg-white dark:bg-[#262525] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <img
+                // className="w-full h-auto@ max-h-[18rem] object-cover"
+                className="max-h-full max-w-full object-contain"
+                src={LaghuUdyog}
                 alt="Certificate 1"
               />
               <div className="p-5">
